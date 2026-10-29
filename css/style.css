@@ -182,8 +182,8 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
 }
 
 .brand-mark {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   flex: none;
   background: transparent !important;
   border: none !important;
@@ -192,7 +192,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 2px 8px rgba(197, 155, 39, 0.45));
+  filter: drop-shadow(0 2px 8px rgba(10, 37, 64, 0.14));
   transition: transform var(--transition-fast);
 }
 .brand:hover .brand-mark {
@@ -336,7 +336,7 @@ html[lang="ar"] .brand-sub {
   background: var(--c-gold-gradient);
   color: #0A2540;
   font-weight: 800;
-  box-shadow: 0 6px 22px -4px rgba(197, 155, 39, 0.45);
+  box-shadow: 0 6px 22px -4px rgba(10, 37, 64, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .btn-gold:hover {
@@ -699,8 +699,8 @@ html[lang="ar"] .brand-sub {
 }
 .feature-icon {
   flex: none;
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
   border: 1px solid rgba(10, 37, 64, 0.22);
@@ -818,8 +818,8 @@ html[lang="ar"] .brand-sub {
   align-items: flex-start;
 }
 .contact-info-item .icon {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
   border: 1px solid rgba(10, 37, 64, 0.22);
