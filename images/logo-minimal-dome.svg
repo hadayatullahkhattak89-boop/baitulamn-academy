@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="domeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE88F"/>
+      <stop offset="40%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9A7516"/>
+    </linearGradient>
+    <linearGradient id="pageShine" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#E6CA65"/>
+      <stop offset="100%" stop-color="#FFF5D6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0A2540" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Crescent Moon atop Dome -->
+    <path d="M 80,18 A 6,6 0 1,0 86,27 A 4.8,4.8 0 1,1 80,18 Z" fill="url(#domeGold)"/>
+
+    <!-- Central Minaret / Finial Needle -->
+    <path d="M 79,26 L 81,26 L 80.5,38 L 79.5,38 Z" fill="url(#domeGold)"/>
+    <circle cx="80" cy="38" r="2.5" fill="url(#domeGold)"/>
+
+    <!-- The Sacred Dome Arch Outlines (Formed by ascending light) -->
+    <!-- Left Dome Curve -->
+    <path d="M 80,38 
+             C 65,46 54,62 50,86 
+             C 48,97 49,108 52,118 
+             C 55,108 64,98 78,96 
+             L 78,41 Z" 
+          fill="url(#domeGold)" opacity="0.95"/>
+
+    <!-- Right Dome Curve -->
+    <path d="M 80,38 
+             C 95,46 106,62 110,86 
+             C 112,97 111,108 108,118 
+             C 105,108 96,98 82,96 
+             L 82,41 Z" 
+          fill="url(#domeGold)" opacity="0.95"/>
+
+    <!-- Center Arch Negative Space Window (Mehrab of Light) -->
+    <path d="M 80,45 
+             C 71,53 66,66 66,82 
+             L 66,122 
+             L 94,122 
+             L 94,82 
+             C 94,66 89,53 80,45 Z" 
+          fill="#FFFFFF" opacity="0.08"/>
+
+    <!-- Open Qur'an at the Foundation -->
+    <!-- Left Wing/Page -->
+    <path d="M 80,118 
+             C 66,104 46,106 32,116 
+             C 45,128 66,128 80,138 Z" 
+          fill="url(#pageShine)"/>
+
+    <!-- Right Wing/Page -->
+    <path d="M 80,118 
+             C 94,104 114,106 128,116 
+             C 115,128 94,128 80,138 Z" 
+          fill="url(#pageShine)"/>
+
+    <!-- Book Center Pivot Accent -->
+    <circle cx="80" cy="120" r="3" fill="#0A2540" stroke="url(#domeGold)" stroke-width="1.5"/>
+
+    <!-- Clean Sleek Base Platform Line -->
+    <line x1="36" y1="142" x2="124" y2="142" stroke="url(#domeGold)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

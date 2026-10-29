@@ -148,81 +148,101 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
 }
 
 /* =========================================================
-   Header & Navigation
+   Unified Luxury Header & Navigation (Designed by Agency Standard)
    ========================================================= */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 2px solid var(--c-gold-metallic);
-  box-shadow: 0 4px 24px -6px rgba(3, 13, 23, 0.08);
+  box-shadow: 0 4px 20px -4px rgba(10, 37, 64, 0.08);
   transition: all var(--transition-fast);
 }
 
-.header-top {
-  padding: 12px 24px;
-  text-align: center;
-  border-bottom: 1.5px solid var(--c-gold-metallic);
-  background: linear-gradient(90deg, #030D17 0%, #0A2540 50%, #030D17 100%);
-}
-.header-top .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  justify-content: center;
-}
-.brand-mark {
-  width: 58px;
-  height: 58px;
-  flex: none;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 0 1.5px var(--c-gold-metallic);
-  background: #030D17;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-.brand:hover .brand-mark {
-  transform: translateY(-1px) scale(1.04);
-  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.5), 0 0 0 2px var(--c-gold-light);
-}
-.brand-mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.brand-name {
-  font-weight: 800;
-  color: #FFFFFF;
-  font-size: 1.25rem;
-  white-space: nowrap;
-  letter-spacing: -0.01em;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-html[lang="ur"] .brand-name .lang-ur,
-html[lang="ar"] .brand-name .lang-ar {
-  font-size: 1.85rem;
-  font-weight: 700;
-  line-height: 2;
-  color: #FFFFFF;
-}
-
-.header-nav-row { padding: 4px 0; }
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 24px;
+  padding: 12px 24px;
   max-width: var(--container);
   margin: 0 auto;
-  gap: 16px;
+  gap: 20px;
 }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex: none;
+  cursor: pointer;
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 8px rgba(197, 155, 39, 0.45));
+  transition: transform var(--transition-fast);
+}
+.brand:hover .brand-mark {
+  transform: scale(1.06);
+}
+.brand-mark img,
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-title {
+  font-family: 'Petrona', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+html[lang="ur"] .brand-title,
+html[lang="ar"] .brand-title {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  font-size: 1.55rem;
+  line-height: 1.8;
+  padding-block: 2px;
+}
+
+.brand-sub {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  white-space: nowrap;
+}
+html[lang="ur"] .brand-sub,
+html[lang="ar"] .brand-sub {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+}
+
 .main-nav { flex: 1; display: flex; justify-content: center; min-width: 0; }
 
 .main-nav ul { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
@@ -246,7 +266,7 @@ html[lang="ar"] .brand-name .lang-ar {
   box-shadow: 0 4px 14px -2px rgba(10, 37, 64, 0.4);
 }
 
-.header-right { display: flex; align-items: center; gap: 14px; }
+.header-right { display: flex; align-items: center; gap: 14px; flex: none; }
 
 /* Language Selector Pills */
 .lang-switch {
