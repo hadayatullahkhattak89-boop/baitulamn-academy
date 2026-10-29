@@ -1656,3 +1656,314 @@ html[lang="ar"] .brand-name .lang-ar {
   .chips-grid { grid-template-columns: 1fr 1fr; }
   .audio-showcase-box { padding: 28px 20px; }
 }
+
+/* =========================================================
+   Mosque Prayer Times Display Board (Authentic Inspired Design)
+   ========================================================= */
+.prayer-display-board {
+  background: var(--c-bg);
+  background-image:
+    radial-gradient(ellipse 900px 500px at 50% 20%, rgba(248, 227, 206, 0.6), transparent 75%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23C9823E' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M40 10 L45 25 L60 30 L45 35 L40 50 L35 35 L20 30 L35 25 Z'/%3E%3Ccircle cx='40' cy='30' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  border: 3px solid var(--c-gold-metallic);
+  border-radius: var(--radius-l);
+  box-shadow: 0 20px 50px -10px rgba(58, 5, 10, 0.2), 0 0 0 1px rgba(226, 167, 111, 0.5);
+  position: relative;
+  overflow: hidden;
+  padding: 34px 28px 24px;
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+/* Corner Filigree Flourishes */
+.corner-flourish {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.corner-flourish.tl { top: 12px; inset-inline-start: 12px; }
+.corner-flourish.tr { top: 12px; inset-inline-end: 12px; transform: scaleX(-1); }
+
+/* Hanging Lanterns */
+.hanging-lanterns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 46px;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  pointer-events: none;
+}
+.lantern-group {
+  display: flex;
+  gap: 24px;
+}
+.lantern-svg {
+  width: 22px;
+  height: 64px;
+  fill: none;
+  stroke: var(--c-gold-metallic);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 4px rgba(201, 130, 62, 0.3));
+}
+
+/* Top Clock Header */
+.prayer-top-clock {
+  text-align: center;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 2;
+}
+.clock-circle {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-gold-light);
+  border: 2px solid var(--c-gold-metallic);
+  border-radius: var(--radius-full);
+  padding: 12px 36px;
+  box-shadow: 0 6px 18px rgba(201, 130, 62, 0.25);
+}
+.live-clock-time {
+  font-family: 'Petrona', serif;
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--c-primary-deep);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.next-iqamah-tag {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 5px;
+}
+.next-iqamah-countdown {
+  color: var(--c-primary-light);
+  font-weight: 900;
+}
+
+/* Center Emblem Medallion */
+.prayer-center-emblem {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2.5px solid var(--c-gold-metallic);
+  box-shadow: 0 8px 24px rgba(58, 5, 10, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.prayer-center-emblem img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+}
+
+/* Prayer Circles Arc Grid */
+.prayer-circles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 36px 0 44px;
+  position: relative;
+  z-index: 2;
+}
+.prayer-circle-card {
+  background: var(--c-gold-light);
+  border: 2px solid var(--c-gold-metallic);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(58, 5, 10, 0.08);
+  transition: all var(--transition-smooth);
+  color: var(--c-ink);
+  position: relative;
+}
+.prayer-circle-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 26px rgba(122, 21, 28, 0.18);
+}
+.prayer-circle-card.active {
+  background: linear-gradient(135deg, var(--c-primary-light) 0%, var(--c-primary) 50%, var(--c-primary-dark) 100%);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(122, 21, 28, 0.45), 0 0 0 3px var(--c-gold-metallic);
+  transform: scale(1.06);
+}
+.p-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.p-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+.p-time {
+  font-family: 'Petrona', serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 3px;
+}
+.p-iqamah {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  opacity: 0.9;
+}
+.prayer-circle-card.active .p-name,
+.prayer-circle-card.active .p-time,
+.prayer-circle-card.active .p-iqamah,
+.prayer-circle-card.active .p-label {
+  color: #FFFFFF;
+}
+
+/* Bottom Banners Grid */
+.prayer-bottom-banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+}
+.p-banner {
+  background: linear-gradient(135deg, var(--c-primary-dark) 0%, var(--c-primary) 100%);
+  border-radius: var(--radius-m);
+  padding: 16px 24px;
+  color: #FFFFFF;
+  border: 1.5px solid var(--c-gold-metallic);
+  box-shadow: 0 8px 24px rgba(58, 5, 10, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p-banner-head {
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: var(--c-gold-light);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(226, 167, 111, 0.3);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-banner-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+}
+.p-banner-item {
+  text-align: center;
+  flex: 1;
+}
+.p-banner-item .lbl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  display: block;
+}
+.p-banner-item .val {
+  font-family: 'Petrona', serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  display: block;
+}
+
+/* Bottom Decorative Fringe */
+.prayer-bottom-fringe {
+  height: 8px;
+  background: repeating-linear-gradient(90deg, var(--c-gold-metallic) 0px, var(--c-gold-metallic) 8px, #C9823E 8px, #C9823E 16px);
+  margin: 20px -28px -24px;
+  border-top: 1px solid rgba(58, 5, 10, 0.2);
+}
+
+/* Controls (City & Method Selector) */
+.prayer-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-m);
+  padding: 14px 22px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.prayer-control-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.prayer-control-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--c-primary);
+}
+.prayer-select {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--c-border);
+  background: var(--c-bg-alt);
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--c-ink);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.prayer-select:focus {
+  outline: none;
+  border-color: var(--c-primary);
+  background: #FFFFFF;
+}
+
+/* Responsive Board */
+@media (max-width: 900px) {
+  .prayer-center-emblem { display: none; }
+  .prayer-circles-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .prayer-circles-grid .prayer-circle-card:nth-child(4),
+  .prayer-circles-grid .prayer-circle-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 650px) {
+  .prayer-circles-grid { grid-template-columns: 1fr 1fr; }
+  .prayer-circle-card { border-radius: var(--radius-m); aspect-ratio: auto; padding: 16px 12px; }
+  .prayer-bottom-banners { grid-template-columns: 1fr; }
+  .clock-circle { padding: 10px 20px; }
+  .live-clock-time { font-size: 1.8rem; }
+  .hanging-lanterns { padding: 0 10px; }
+}
