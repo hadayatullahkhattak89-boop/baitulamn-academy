@@ -1,152 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
   <defs>
-    <!-- Radiant Metallic Gold Gradients -->
-    <linearGradient id="goldLustre" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FDF3CD"/>
+    <linearGradient id="starGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2"/>
       <stop offset="35%" stop-color="#E5C158"/>
       <stop offset="70%" stop-color="#C59B27"/>
       <stop offset="100%" stop-color="#9A7516"/>
     </linearGradient>
 
-    <linearGradient id="goldAccent" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9A7516"/>
-      <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#FFF4D0"/>
+    <linearGradient id="quranWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
     </linearGradient>
 
-    <!-- Deep Midnight Sapphire for Accents -->
-    <linearGradient id="navyShade" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0A2540"/>
-      <stop offset="100%" stop-color="#030D17"/>
-    </linearGradient>
-
-    <filter id="gentleGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#C59B27" flood-opacity="0.3"/>
+    <filter id="starShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0A2540" flood-opacity="0.2"/>
     </filter>
   </defs>
 
-  <!-- Group with subtle drop shadow filter -->
-  <g filter="url(#gentleGlow)">
+  <g filter="url(#starShadow)">
+    <!-- Outer 8-Point Geometric Islamic Star (Rub-el-Hizb) -->
+    <!-- Square 1 (Standard) -->
+    <rect x="36" y="36" width="128" height="128" rx="14" fill="none" stroke="url(#starGold)" stroke-width="2.5"/>
+    <!-- Square 2 (Rotated 45 degrees around center 100,100) -->
+    <rect x="36" y="36" width="128" height="128" rx="14" transform="rotate(45 100 100)" fill="none" stroke="url(#starGold)" stroke-width="2.5"/>
 
-    <!-- Outer Refined Arch (Mehrab of Amn & Peace) -->
-    <path d="M 80,14 
-             C 60,30 40,46 40,78 
-             L 40,132 
-             C 40,135 43,138 46,138 
-             L 114,138 
-             C 117,138 120,135 120,132 
-             L 120,78 
-             C 120,46 100,30 80,14 Z" 
-          fill="none" 
-          stroke="url(#goldLustre)" 
-          stroke-width="3" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"/>
+    <!-- Inner Filigree Circle -->
+    <circle cx="100" cy="100" r="62" fill="none" stroke="url(#starGold)" stroke-width="1.2" stroke-dasharray="3, 3" opacity="0.8"/>
+    <circle cx="100" cy="100" r="56" fill="none" stroke="url(#starGold)" stroke-width="1.8"/>
 
-    <!-- Inner Filigree Arch Line -->
-    <path d="M 80,24 
-             C 63,38 48,52 48,80 
-             L 48,130 
-             L 112,130 
-             L 112,80 
-             C 112,52 97,38 80,24 Z" 
-          fill="none" 
-          stroke="url(#goldLustre)" 
-          stroke-width="1.2" 
-          stroke-dasharray="2.5, 3" 
-          opacity="0.75"/>
-
-    <!-- Celestial Crescent Moon & Star at Apex -->
-    <g transform="translate(80, 20) scale(0.95)" fill="url(#goldLustre)">
-      <!-- Crescent -->
-      <path d="M 0,-13 A 6.5,6.5 0 1,0 6,-3 A 5.2,5.2 0 1,1 0,-13 Z" />
-      <!-- Star -->
-      <polygon points="0,-4 1.3,-1.5 4,-1.5 2,0.2 2.7,2.8 0.5,1.2 -1.7,2.8 -1,0.2 -3,-1.5 -0.3,-1.5" />
+    <!-- 8 Corner Dots -->
+    <g fill="url(#starGold)">
+      <circle cx="100" cy="24" r="2.5"/>
+      <circle cx="100" cy="176" r="2.5"/>
+      <circle cx="24" cy="100" r="2.5"/>
+      <circle cx="176" cy="100" r="2.5"/>
+      <circle cx="46" cy="46" r="2"/>
+      <circle cx="154" cy="46" r="2"/>
+      <circle cx="46" cy="154" r="2"/>
+      <circle cx="154" cy="154" r="2"/>
     </g>
 
-    <!-- Traditional Wooden Rehal (Stand - رحل) -->
-    <g stroke="url(#goldLustre)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-      <!-- Left leg crossing -->
-      <path d="M 52,98 L 74,124 L 70,128 L 46,102 Z" fill="url(#goldLustre)" stroke="none" opacity="0.9"/>
-      <!-- Right leg crossing -->
-      <path d="M 108,98 L 86,124 L 90,128 L 114,102 Z" fill="url(#goldLustre)" stroke="none" opacity="0.9"/>
-      <!-- Center joint pin -->
-      <circle cx="80" cy="111" r="2.5" fill="#0A2540" stroke="url(#goldLustre)" stroke-width="1.5"/>
-      <!-- Base Horizon Stand line -->
-      <line x1="38" y1="138" x2="122" y2="138" stroke="url(#goldLustre)" stroke-width="2.8"/>
-    </g>
+    <!-- Centerpiece: The Holy Qur'an & Rehal -->
+    <g transform="translate(0, -2)">
+      <!-- Rehal (Stand - رحل) -->
+      <path d="M 72,118 L 94,142 L 106,142 L 82,118 Z" fill="url(#starGold)"/>
+      <path d="M 128,118 L 106,142 L 94,142 L 118,118 Z" fill="url(#starGold)"/>
+      <circle cx="100" cy="130" r="2.5" fill="#0A2540" stroke="url(#starGold)" stroke-width="1.2"/>
+      <line x1="68" y1="142" x2="132" y2="142" stroke="url(#starGold)" stroke-width="2.5" stroke-linecap="round"/>
 
-    <!-- The Holy Qur'an (Open Book of Light) -->
-    <g>
-      <!-- Book Pages Background Shell -->
-      <path d="M 80,98 
-               C 67,88 53,90 44,97 
-               L 44,72 
-               C 53,65 67,63 80,73 
-               C 93,63 107,65 116,72 
-               L 116,97 
-               C 107,90 93,88 80,98 Z" 
-            fill="url(#navyShade)" 
-            stroke="url(#goldLustre)" 
-            stroke-width="1.8"/>
-
-      <!-- Left Page (Illuminated Gold Leaf) -->
-      <path d="M 80,96 
-               C 68,87 55,89 47,95 
-               L 47,73 
-               C 55,67 68,65 80,74 Z" 
-            fill="none" 
-            stroke="url(#goldAccent)" 
-            stroke-width="2.2" 
+      <!-- Qur'an Open Pages -->
+      <!-- Left Page Shell -->
+      <path d="M 100,116 
+               C 86,104 68,107 56,116 
+               L 56,84 
+               C 68,76 86,74 100,86 Z" 
+            fill="url(#quranWhite)" 
+            stroke="url(#starGold)" 
+            stroke-width="2" 
             stroke-linejoin="round"/>
 
-      <!-- Right Page (Illuminated Gold Leaf) -->
-      <path d="M 80,96 
-               C 92,87 105,89 113,95 
-               L 113,73 
-               C 105,67 92,65 80,74 Z" 
-            fill="none" 
-            stroke="url(#goldAccent)" 
-            stroke-width="2.2" 
+      <!-- Right Page Shell -->
+      <path d="M 100,116 
+               C 114,104 132,107 144,116 
+               L 144,84 
+               C 132,76 114,74 100,86 Z" 
+            fill="url(#quranWhite)" 
+            stroke="url(#starGold)" 
+            stroke-width="2" 
             stroke-linejoin="round"/>
 
-      <!-- Spine Center Line -->
-      <line x1="80" y1="73" x2="80" y2="97" stroke="url(#goldLustre)" stroke-width="2"/>
+      <!-- Center Spine -->
+      <line x1="100" y1="86" x2="100" y2="116" stroke="url(#starGold)" stroke-width="2"/>
 
-      <!-- Elegant Page Text Lines Simulation -->
-      <g stroke="url(#goldLustre)" stroke-width="1.2" stroke-linecap="round" opacity="0.8">
-        <line x1="53" y1="78" x2="72" y2="81"/>
-        <line x1="52" y1="83" x2="73" y2="86"/>
-        <line x1="54" y1="88" x2="71" y2="91"/>
+      <!-- Arabic Calligraphy Impression on Left & Right Pages -->
+      <g stroke="url(#starGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.85">
+        <line x1="66" y1="91" x2="90" y2="94"/>
+        <line x1="64" y1="97" x2="91" y2="100"/>
+        <line x1="67" y1="103" x2="88" y2="106"/>
 
-        <line x1="88" y1="81" x2="107" y2="78"/>
-        <line x1="87" y1="86" x2="108" y2="83"/>
-        <line x1="89" y1="91" x2="106" y2="88"/>
+        <line x1="110" y1="94" x2="134" y2="91"/>
+        <line x1="109" y1="100" x2="136" y2="97"/>
+        <line x1="112" y1="106" x2="133" y2="103"/>
       </g>
 
-      <!-- Silk Bookmark Ribbon hanging from center -->
-      <path d="M 80,96 C 81,104 77,109 81,118 L 83,115 L 85,118 C 82,109 83,104 80,96 Z" 
-            fill="url(#goldAccent)"/>
+      <!-- Silk Ribbon Bookmark -->
+      <path d="M 100,116 C 102,124 97,128 101,136 L 103,133 L 105,136 C 102,128 103,124 100,116 Z" 
+            fill="url(#starGold)"/>
+
+      <!-- Rising Noor Rays atop Qur'an -->
+      <g stroke="url(#starGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.75">
+        <line x1="100" y1="76" x2="100" y2="60"/>
+        <line x1="88" y1="78" x2="80" y2="66"/>
+        <line x1="112" y1="78" x2="120" y2="66"/>
+      </g>
     </g>
 
-    <!-- Radiant Rays of Knowledge & Guidance (Noor) -->
-    <g stroke="url(#goldLustre)" stroke-width="1" stroke-linecap="round" opacity="0.6">
-      <line x1="80" y1="64" x2="80" y2="46"/>
-      <line x1="71" y1="66" x2="63" y2="52"/>
-      <line x1="89" y1="66" x2="97" y2="52"/>
-      <line x1="63" y1="71" x2="52" y2="60"/>
-      <line x1="97" y1="71" x2="108" y2="60"/>
-    </g>
-
-    <!-- Olive Wreath / Laurel Leaves of Peace (Amn) along outer base -->
-    <g fill="url(#goldLustre)">
-      <!-- Left leaves -->
-      <path d="M 36,122 C 32,118 31,110 36,106 C 37,112 40,117 36,122 Z"/>
-      <path d="M 33,132 C 28,129 27,121 32,117 C 33,123 37,127 33,132 Z"/>
-      <!-- Right leaves -->
-      <path d="M 124,122 C 128,118 129,110 124,106 C 123,112 120,117 124,122 Z"/>
-      <path d="M 127,132 C 132,129 133,121 128,117 C 127,123 123,127 127,132 Z"/>
-    </g>
-
+    <!-- Crescent Moon at Top Apex -->
+    <path d="M 100,56 A 5,5 0 1,0 105,63 A 4,4 0 1,1 100,56 Z" fill="url(#starGold)"/>
   </g>
 </svg>

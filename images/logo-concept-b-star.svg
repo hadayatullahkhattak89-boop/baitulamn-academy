@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="starGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2"/>
+      <stop offset="35%" stop-color="#E5C158"/>
+      <stop offset="70%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#9A7516"/>
+    </linearGradient>
+
+    <linearGradient id="quranWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <filter id="starShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0A2540" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#starShadow)">
+    <!-- Outer 8-Point Geometric Islamic Star (Rub-el-Hizb) -->
+    <!-- Square 1 (Standard) -->
+    <rect x="36" y="36" width="128" height="128" rx="14" fill="none" stroke="url(#starGold)" stroke-width="2.5"/>
+    <!-- Square 2 (Rotated 45 degrees around center 100,100) -->
+    <rect x="36" y="36" width="128" height="128" rx="14" transform="rotate(45 100 100)" fill="none" stroke="url(#starGold)" stroke-width="2.5"/>
+
+    <!-- Inner Filigree Circle -->
+    <circle cx="100" cy="100" r="62" fill="none" stroke="url(#starGold)" stroke-width="1.2" stroke-dasharray="3, 3" opacity="0.8"/>
+    <circle cx="100" cy="100" r="56" fill="none" stroke="url(#starGold)" stroke-width="1.8"/>
+
+    <!-- 8 Corner Dots -->
+    <g fill="url(#starGold)">
+      <circle cx="100" cy="24" r="2.5"/>
+      <circle cx="100" cy="176" r="2.5"/>
+      <circle cx="24" cy="100" r="2.5"/>
+      <circle cx="176" cy="100" r="2.5"/>
+      <circle cx="46" cy="46" r="2"/>
+      <circle cx="154" cy="46" r="2"/>
+      <circle cx="46" cy="154" r="2"/>
+      <circle cx="154" cy="154" r="2"/>
+    </g>
+
+    <!-- Centerpiece: The Holy Qur'an & Rehal -->
+    <g transform="translate(0, -2)">
+      <!-- Rehal (Stand - رحل) -->
+      <path d="M 72,118 L 94,142 L 106,142 L 82,118 Z" fill="url(#starGold)"/>
+      <path d="M 128,118 L 106,142 L 94,142 L 118,118 Z" fill="url(#starGold)"/>
+      <circle cx="100" cy="130" r="2.5" fill="#0A2540" stroke="url(#starGold)" stroke-width="1.2"/>
+      <line x1="68" y1="142" x2="132" y2="142" stroke="url(#starGold)" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Qur'an Open Pages -->
+      <!-- Left Page Shell -->
+      <path d="M 100,116 
+               C 86,104 68,107 56,116 
+               L 56,84 
+               C 68,76 86,74 100,86 Z" 
+            fill="url(#quranWhite)" 
+            stroke="url(#starGold)" 
+            stroke-width="2" 
+            stroke-linejoin="round"/>
+
+      <!-- Right Page Shell -->
+      <path d="M 100,116 
+               C 114,104 132,107 144,116 
+               L 144,84 
+               C 132,76 114,74 100,86 Z" 
+            fill="url(#quranWhite)" 
+            stroke="url(#starGold)" 
+            stroke-width="2" 
+            stroke-linejoin="round"/>
+
+      <!-- Center Spine -->
+      <line x1="100" y1="86" x2="100" y2="116" stroke="url(#starGold)" stroke-width="2"/>
+
+      <!-- Arabic Calligraphy Impression on Left & Right Pages -->
+      <g stroke="url(#starGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.85">
+        <line x1="66" y1="91" x2="90" y2="94"/>
+        <line x1="64" y1="97" x2="91" y2="100"/>
+        <line x1="67" y1="103" x2="88" y2="106"/>
+
+        <line x1="110" y1="94" x2="134" y2="91"/>
+        <line x1="109" y1="100" x2="136" y2="97"/>
+        <line x1="112" y1="106" x2="133" y2="103"/>
+      </g>
+
+      <!-- Silk Ribbon Bookmark -->
+      <path d="M 100,116 C 102,124 97,128 101,136 L 103,133 L 105,136 C 102,128 103,124 100,116 Z" 
+            fill="url(#starGold)"/>
+
+      <!-- Rising Noor Rays atop Qur'an -->
+      <g stroke="url(#starGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.75">
+        <line x1="100" y1="76" x2="100" y2="60"/>
+        <line x1="88" y1="78" x2="80" y2="66"/>
+        <line x1="112" y1="78" x2="120" y2="66"/>
+      </g>
+    </g>
+
+    <!-- Crescent Moon at Top Apex -->
+    <path d="M 100,56 A 5,5 0 1,0 105,63 A 4,4 0 1,1 100,56 Z" fill="url(#starGold)"/>
+  </g>
+</svg>

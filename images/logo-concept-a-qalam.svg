@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qalamGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2"/>
+      <stop offset="35%" stop-color="#E5C158"/>
+      <stop offset="70%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#9A7516"/>
+    </linearGradient>
+
+    <linearGradient id="softWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <filter id="qalamShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0A2540" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#qalamShadow)">
+    <!-- Elegant Circular Rim Framing (Open at the top for infinity) -->
+    <path d="M 46,62 A 74,74 0 1,0 154,62" fill="none" stroke="url(#qalamGold)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 54,66 A 64,64 0 1,0 146,66" fill="none" stroke="url(#qalamGold)" stroke-width="1.2" stroke-dasharray="3, 3" opacity="0.75"/>
+
+    <!-- Crescent Moon & Star at Apex -->
+    <path d="M 100,20 A 7,7 0 1,0 107,30 A 5.5,5.5 0 1,1 100,20 Z" fill="url(#qalamGold)"/>
+    <polygon points="100,32 101.4,34.8 104.5,35 102.2,37 103,40 100.5,38.4 98,40 98.8,37 96.5,35 99.6,34.8" fill="url(#qalamGold)"/>
+
+    <!-- Central Motif: Traditional Reed Pen (القلم) Piercing the Quran -->
+    <!-- Qalam Shaft -->
+    <path d="M 98,36 L 102,36 L 101,104 L 99,104 Z" fill="url(#qalamGold)"/>
+    <!-- Qalam Nib (الريشة / سن القلم) -->
+    <polygon points="98,104 102,104 100.5,116 100,118 99.5,116" fill="url(#qalamGold)"/>
+    <!-- Qalam Nib split line -->
+    <line x1="100" y1="108" x2="100" y2="116" stroke="#0A2540" stroke-width="1"/>
+
+    <!-- The Open Book (قرآن مجید) radiating outward from the Qalam -->
+    <!-- Left Wing Page -->
+    <path d="M 98,102 
+             C 82,88 62,90 44,100 
+             L 44,72 
+             C 62,64 82,62 98,74 Z" 
+          fill="url(#softWhite)" 
+          stroke="url(#qalamGold)" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+
+    <!-- Right Wing Page -->
+    <path d="M 102,102 
+             C 118,88 138,90 156,100 
+             L 156,72 
+             C 138,64 118,62 102,74 Z" 
+          fill="url(#softWhite)" 
+          stroke="url(#qalamGold)" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+
+    <!-- Page text simulation lines -->
+    <g stroke="url(#qalamGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.8">
+      <line x1="52" y1="78" x2="86" y2="82"/>
+      <line x1="50" y1="84" x2="88" y2="88"/>
+      <line x1="53" y1="90" x2="84" y2="94"/>
+
+      <line x1="114" y1="82" x2="148" y2="78"/>
+      <line x1="112" y1="88" x2="150" y2="84"/>
+      <line x1="116" y1="94" x2="147" y2="90"/>
+    </g>
+
+    <!-- Traditional Wooden Rehal (Stand - رحل) -->
+    <g stroke="url(#qalamGold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M 66,110 L 92,138 L 108,138 L 82,110 Z" fill="url(#qalamGold)" stroke="none"/>
+      <path d="M 134,110 L 108,138 L 92,138 L 118,110 Z" fill="url(#qalamGold)" stroke="none"/>
+      <circle cx="100" cy="124" r="2.5" fill="#0A2540" stroke="url(#qalamGold)" stroke-width="1.2"/>
+      <line x1="58" y1="138" x2="142" y2="138" stroke="url(#qalamGold)" stroke-width="2.8"/>
+    </g>
+
+    <!-- Radiance Noor Rays -->
+    <g stroke="url(#qalamGold)" stroke-width="1.2" stroke-linecap="round" opacity="0.7">
+      <line x1="100" y1="52" x2="100" y2="40"/>
+      <line x1="86" y1="56" x2="78" y2="46"/>
+      <line x1="114" y1="56" x2="122" y2="46"/>
+    </g>
+  </g>
+</svg>
