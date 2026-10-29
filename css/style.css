@@ -1,43 +1,43 @@
 /* =========================================================
-   Bait-ul-Amn Online Academy — Premium Modern Design System
-   Theme: Royal Islamic Sapphire, Radiant Sunlit Gold & Clean Slate
+   Bait-ul-Amn Online Academy — Premium Sacred Mosque Theme
+   Inspired by Masjid Prayer Times Display Palette:
+   Royal Velvet Maroon (#7A151C), Golden Amber Sand (#E2A76F) & Warm Linen Canvas (#FAF6F0)
    ========================================================= */
 
 :root {
-  /* --- Primary Jewel Palette (Royal Islamic Sapphire) --- */
-  --c-primary: #1E3A8A;         /* Royal Sapphire Blue */
-  --c-primary-dark: #0F172A;    /* Midnight Slate */
-  --c-primary-deep: #0A0F1D;    /* Dark Cosmic Navy */
-  --c-primary-light: #2563EB;   /* Vibrant Blue Jewel */
-  --c-primary-soft: #EFF6FF;    /* Fresh Sky-Ice Tint */
-  --c-primary-glow: rgba(37, 99, 235, 0.3);
+  /* --- Primary Jewel Palette (Royal Velvet Maroon & Burgundy) --- */
+  --c-primary: #7A151C;         /* Deep Royal Velvet Maroon (As in Fajr & Banner) */
+  --c-primary-dark: #580B11;    /* Midnight Wine Maroon */
+  --c-primary-deep: #3A050A;    /* Imperial Deep Burgundy */
+  --c-primary-light: #9B1D25;   /* Vibrant Crimson Maroon */
+  --c-primary-soft: #FDF3F3;    /* Delicate Rose-Cream Tint */
+  --c-primary-glow: rgba(122, 21, 28, 0.32);
 
-  /* --- Secondary / Tarbiyah Accent (Vibrant Emerald) --- */
-  --c-accent: #059669;          /* Islamic Emerald */
-  --c-accent-light: #10B981;    /* Vibrant Mint */
-  --c-accent-soft: #ECFDF5;     /* Mint Soft Pill */
-  --c-accent-glow: rgba(16, 185, 129, 0.25);
+  /* --- Secondary & Accent (Golden Sandstone & Amber Peach) --- */
+  --c-gold: #C9823E;            /* Warm Terracotta Amber */
+  --c-gold-metallic: #E2A76F;   /* Radiant Sandstone Peach (Prayer Badge Circles) */
+  --c-gold-light: #F8E3CE;      /* Soft Peach Champagne */
+  --c-gold-dark: #A56024;       /* Deep Antique Bronze Gold */
+  --c-gold-gradient: linear-gradient(135deg, #F3C491 0%, #E2A76F 45%, #C9823E 100%);
+  --c-gold-glow: rgba(226, 167, 111, 0.38);
 
-  /* --- Luxury Metallic Palette (Radiant Sunlit Gold) --- */
-  --c-gold: #D97706;            /* Warm Amber Gold */
-  --c-gold-metallic: #F59E0B;   /* Radiant Sunlit Gold */
-  --c-gold-light: #FEF3C7;      /* Champagne Soft Gold */
-  --c-gold-dark: #B45309;       /* Deep Antique Gold */
-  --c-gold-gradient: linear-gradient(135deg, #FBBF24 0%, #F59E0B 40%, #D97706 100%);
-  --c-gold-glow: rgba(245, 158, 11, 0.35);
+  /* --- Complementary Pure Accent (Sage-Mint Accent) --- */
+  --c-accent: #2E7D32;          /* Islamic Emerald Green */
+  --c-accent-light: #43A047;
+  --c-accent-soft: #E8F5E9;
 
-  /* --- Canvas & Modern Surfaces --- */
-  --c-bg: #F8FAFC;              /* Clean Slate-White Canvas */
-  --c-bg-alt: #F1F5F9;          /* Subtle Slate Alternate Surface */
+  /* --- Canvas & Surfaces (Warm Linen & Sandstone Pearl) --- */
+  --c-bg: #FAF6F0;              /* Warm Linen / Sandstone Ivory Canvas */
+  --c-bg-alt: #F3ECE1;          /* Subtle Warm Sand Alternate Surface */
   --c-surface: #FFFFFF;         /* Crisp Pure White Surface */
   --c-surface-card: #FFFFFF;
-  --c-border: #E2E8F0;          /* Modern Light Border */
-  --c-border-strong: #CBD5E1;
+  --c-border: #E8DDD0;          /* Warm Soft Border */
+  --c-border-strong: #D5C3AF;   /* Defined Border */
 
-  /* --- High-Contrast Ink Typography --- */
-  --c-ink: #0F172A;             /* Slate 900 - Sharp Heading Contrast */
-  --c-ink-soft: #334155;        /* Slate 700 - Highly Legible Body Copy */
-  --c-ink-muted: #64748B;       /* Slate 500 - Secondary Meta Text */
+  /* --- High-Contrast Typography Inks (Deep Espresso & Warm Charcoal) --- */
+  --c-ink: #2B1819;             /* Deep Espresso Ink (High Contrast) */
+  --c-ink-soft: #4E3637;        /* Warm Charcoal (Body Copy) */
+  --c-ink-muted: #7D6364;       /* Warm Taupe (Meta Details) */
   --c-white: #FFFFFF;
 
   /* --- Geometry & Elevation --- */
@@ -47,11 +47,11 @@
   --radius-l: 26px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.06);
-  --shadow-soft: 0 4px 18px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
-  --shadow-hover: 0 20px 40px -8px rgba(30, 58, 138, 0.16), 0 8px 18px -4px rgba(245, 158, 11, 0.12);
-  --shadow-modal: 0 25px 60px -15px rgba(10, 15, 29, 0.5);
+  --shadow-sm: 0 2px 8px -2px rgba(43, 24, 25, 0.06);
+  --shadow-soft: 0 4px 18px -2px rgba(43, 24, 25, 0.06), 0 2px 6px -1px rgba(43, 24, 25, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(58, 5, 10, 0.08), 0 4px 12px -2px rgba(58, 5, 10, 0.04);
+  --shadow-hover: 0 20px 42px -8px rgba(122, 21, 28, 0.18), 0 8px 20px -4px rgba(226, 167, 111, 0.18);
+  --shadow-modal: 0 25px 60px -15px rgba(58, 5, 10, 0.55);
 
   --container: 1200px;
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -132,7 +132,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+  border-bottom: 1.5px solid rgba(226, 167, 111, 0.35);
 }
 .announce-bar a {
   text-decoration: underline;
@@ -154,16 +154,16 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 2px solid rgba(245, 158, 11, 0.25);
-  box-shadow: 0 4px 24px -6px rgba(15, 23, 42, 0.08);
+  border-bottom: 2px solid var(--c-gold-metallic);
+  box-shadow: 0 4px 24px -6px rgba(58, 5, 10, 0.08);
   transition: all var(--transition-fast);
 }
 
 .header-top {
   padding: 10px 24px;
   text-align: center;
-  border-bottom: 1px solid rgba(30, 58, 138, 0.08);
-  background: linear-gradient(90deg, rgba(239, 246, 255, 0.6) 0%, rgba(254, 243, 199, 0.35) 50%, rgba(239, 246, 255, 0.6) 100%);
+  border-bottom: 1px solid rgba(122, 21, 28, 0.1);
+  background: linear-gradient(90deg, rgba(253, 243, 243, 0.6) 0%, rgba(248, 227, 206, 0.45) 50%, rgba(253, 243, 243, 0.6) 100%);
 }
 .header-top .brand {
   display: inline-flex;
@@ -175,7 +175,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   width: 44px;
   height: 44px;
   flex: none;
-  filter: drop-shadow(0 2px 6px rgba(30, 58, 138, 0.2));
+  filter: drop-shadow(0 2px 6px rgba(122, 21, 28, 0.2));
 }
 .brand-name {
   font-weight: 800;
@@ -221,7 +221,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .main-nav a.active {
   background: linear-gradient(135deg, var(--c-primary), var(--c-primary-light));
   color: #FFFFFF;
-  box-shadow: 0 4px 14px -2px rgba(30, 58, 138, 0.35);
+  box-shadow: 0 4px 14px -2px rgba(122, 21, 28, 0.4);
 }
 
 .header-right { display: flex; align-items: center; gap: 14px; }
@@ -253,7 +253,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .lang-switch button.active {
   background: var(--c-primary);
   color: #FFFFFF;
-  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.25);
+  box-shadow: 0 2px 8px rgba(122, 21, 28, 0.3);
 }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
@@ -281,26 +281,26 @@ html[lang="ar"] .brand-name .lang-ar {
 .btn-primary {
   background: linear-gradient(135deg, var(--c-primary-light) 0%, var(--c-primary) 100%);
   color: #FFFFFF;
-  box-shadow: 0 6px 20px -4px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 6px 20px -4px rgba(122, 21, 28, 0.45);
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-dark) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 26px -6px rgba(30, 58, 138, 0.55);
+  box-shadow: 0 10px 26px -6px rgba(122, 21, 28, 0.6);
   color: #FFFFFF;
 }
 
 .btn-gold {
   background: var(--c-gold-gradient);
-  color: #FFFFFF;
+  color: var(--c-primary-deep);
   font-weight: 800;
-  box-shadow: 0 6px 22px -4px rgba(217, 119, 6, 0.45);
-  border: 1px solid rgba(254, 243, 199, 0.35);
+  box-shadow: 0 6px 22px -4px rgba(201, 130, 62, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -6px rgba(217, 119, 6, 0.6);
-  color: #FFFFFF;
+  box-shadow: 0 12px 30px -6px rgba(201, 130, 62, 0.6);
+  color: var(--c-primary-deep);
 }
 
 .btn-outline {
@@ -330,7 +330,7 @@ html[lang="ar"] .brand-name .lang-ar {
 }
 
 /* =========================================================
-   Hero Section (Royal Midnight Sapphire & Cosmic Starlight)
+   Hero Section (Royal Velvet Burgundy & Warm Starlight Glow)
    ========================================================= */
 .hero {
   padding: 136px 0 96px;
@@ -356,9 +356,9 @@ html[lang="ar"] .brand-name .lang-ar {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(37, 99, 235, 0.35), transparent 70%),
-    radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.2), transparent 55%),
-    linear-gradient(180deg, rgba(10, 15, 29, 0.92) 0%, rgba(15, 23, 42, 0.95) 55%, rgba(10, 15, 29, 0.98) 100%);
+    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(226, 167, 111, 0.32), transparent 70%),
+    radial-gradient(circle at 85% 85%, rgba(155, 29, 37, 0.28), transparent 55%),
+    linear-gradient(180deg, rgba(58, 5, 10, 0.92) 0%, rgba(88, 11, 17, 0.95) 55%, rgba(58, 5, 10, 0.98) 100%);
 }
 
 .eyebrow {
@@ -373,8 +373,8 @@ html[lang="ar"] .brand-name .lang-ar {
   margin-bottom: 22px;
 }
 .hero .eyebrow {
-  background: rgba(15, 23, 42, 0.75);
-  border: 1.5px solid rgba(245, 158, 11, 0.5);
+  background: rgba(58, 5, 10, 0.75);
+  border: 1.5px solid rgba(226, 167, 111, 0.55);
   padding: 8px 22px;
   border-radius: var(--radius-full);
   color: var(--c-gold-light);
@@ -396,7 +396,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-size: 1.15rem;
 }
 .hero .lead p {
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.94);
   line-height: 1.85;
 }
 .hero-cta {
@@ -426,8 +426,8 @@ html[lang="ar"] .brand-name .lang-ar {
   text-align: center;
   background-color: #FFFFFF;
   background-image:
-    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(239, 246, 255, 0.85), transparent 70%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%231E3A8A' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(248, 227, 206, 0.6), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237A151C' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-bottom: 1px solid var(--c-border);
 }
 .page-hero h1 {
@@ -448,7 +448,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .section { padding: 86px 0; }
 .section-alt {
   background-color: var(--c-bg-alt);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%231E3A8A' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237A151C' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-top: 1px solid var(--c-border);
   border-bottom: 1px solid var(--c-border);
 }
@@ -467,7 +467,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .section-dark .section-head h2 { color: #FFFFFF; }
 
 /* =========================================================
-   Grids & Premium Cards
+   Grids & Premium Cards (Styled as in Prayer Time Badges)
    ========================================================= */
 .grid { display: grid; gap: 30px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
@@ -490,32 +490,33 @@ html[lang="ar"] .brand-name .lang-ar {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 3.5px;
   background: transparent;
   transition: background var(--transition-fast);
 }
 .card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
-  border-color: rgba(30, 58, 138, 0.35);
+  border-color: rgba(122, 21, 28, 0.35);
 }
 .card:hover::before {
   background: var(--c-gold-gradient);
 }
 
+/* Circular Badge Number - Like the Circular Badges in Prayer Time Display */
 .step-num {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--c-primary-light), var(--c-primary));
-  color: #FFFFFF;
+  background: var(--c-gold-gradient);
+  color: var(--c-primary-deep);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   margin-bottom: 18px;
   font-family: 'Petrona', serif;
-  box-shadow: 0 4px 14px rgba(30, 58, 138, 0.35);
+  box-shadow: 0 4px 14px rgba(201, 130, 62, 0.35);
 }
 
 /* Course Cards */
@@ -538,11 +539,11 @@ html[lang="ar"] .brand-name .lang-ar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 15, 29, 0.15) 0%, rgba(10, 15, 29, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(58, 5, 10, 0.15) 0%, rgba(58, 5, 10, 0.8) 100%);
 }
 .course-card .step-num {
   background: var(--c-gold-gradient);
-  color: #FFFFFF;
+  color: var(--c-primary-deep);
 }
 .course-card-img .step-num {
   position: absolute;
@@ -550,7 +551,7 @@ html[lang="ar"] .brand-name .lang-ar {
   inset-inline-start: 18px;
   z-index: 1;
   margin: 0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 .course-card h3 {
   color: var(--c-primary);
@@ -570,7 +571,7 @@ html[lang="ar"] .brand-name .lang-ar {
   color: var(--c-primary);
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(122, 21, 28, 0.2);
 }
 
 /* Teacher Cards */
@@ -592,7 +593,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-weight: 800;
   font-size: 1.75rem;
   font-family: 'Petrona', serif;
-  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.18);
+  box-shadow: 0 6px 20px rgba(122, 21, 28, 0.2);
 }
 .teacher-photo span {
   width: 100%;
@@ -640,7 +641,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-weight: 500;
 }
 .stars {
-  color: #F59E0B;
+  color: #E2A76F;
   letter-spacing: 2px;
   margin-bottom: 12px;
   display: block;
@@ -660,7 +661,7 @@ html[lang="ar"] .brand-name .lang-ar {
   height: 52px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
-  border: 1px solid rgba(37, 99, 235, 0.25);
+  border: 1px solid rgba(122, 21, 28, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -692,13 +693,13 @@ html[lang="ar"] .brand-name .lang-ar {
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow-card);
-  border: 1px solid rgba(30, 58, 138, 0.2);
+  border: 1px solid rgba(122, 21, 28, 0.25);
 }
 .split-media::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(155deg, rgba(10, 15, 29, 0.8) 0%, rgba(30, 58, 138, 0.4) 50%, rgba(245, 158, 11, 0.25) 100%);
+  background: linear-gradient(155deg, rgba(58, 5, 10, 0.85) 0%, rgba(122, 21, 28, 0.45) 50%, rgba(226, 167, 111, 0.25) 100%);
 }
 .split-media svg {
   width: 32%;
@@ -779,7 +780,7 @@ html[lang="ar"] .brand-name .lang-ar {
   height: 52px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(122, 21, 28, 0.22);
   flex: none;
   display: flex;
   align-items: center;
@@ -818,7 +819,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .form-field select:focus {
   outline: none;
   border-color: var(--c-primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 0 3px rgba(122, 21, 28, 0.18);
 }
 .form-field textarea { min-height: 120px; resize: vertical; }
 .map-embed {
@@ -839,22 +840,22 @@ html[lang="ar"] .brand-name .lang-ar {
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  border: 1.5px solid rgba(226, 167, 111, 0.4);
   box-shadow: var(--shadow-card);
 }
 .cta-band h2 { color: #FFFFFF; }
-.cta-band p { color: rgba(255, 255, 255, 0.9); }
+.cta-band p { color: rgba(255, 255, 255, 0.92); }
 .cta-band::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 85% 20%, rgba(245, 158, 11, 0.35), transparent 60%),
+    radial-gradient(circle at 85% 20%, rgba(226, 167, 111, 0.35), transparent 60%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M45 15 L51 33 L69 39 L51 45 L45 63 L39 45 L21 39 L39 33 Z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* =========================================================
-   Footer
+   Footer (Imperial Velvet Maroon with Warm Sand Accents)
    ========================================================= */
 .site-footer {
   background: var(--c-primary-deep);
@@ -916,10 +917,10 @@ html[lang="ar"] .brand-name .lang-ar {
 .social-row a svg { width: 19px; height: 19px; fill: currentColor; }
 .social-row a:hover {
   background: var(--c-gold-gradient);
-  color: #FFFFFF;
+  color: var(--c-primary-deep);
   transform: translateY(-3px);
   border-color: transparent;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.45);
+  box-shadow: 0 4px 16px rgba(226, 167, 111, 0.45);
 }
 
 .watermark-arch {
@@ -964,7 +965,7 @@ html[lang="ar"] .brand-name .lang-ar {
   100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* Trust Badges Strip */
+/* Trust Badges Strip (Warm Sand Glass Chips) */
 .trust-strip {
   display: flex;
   flex-wrap: wrap;
@@ -980,7 +981,7 @@ html[lang="ar"] .brand-name .lang-ar {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(226, 167, 111, 0.4);
   border-radius: var(--radius-full);
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -988,7 +989,7 @@ html[lang="ar"] .brand-name .lang-ar {
   color: #FFFFFF;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
-.trust-chip svg { flex: none; stroke: var(--c-accent-light); }
+.trust-chip svg { flex: none; stroke: var(--c-gold-metallic); }
 
 /* How It Works */
 .hiw-grid {
@@ -1058,7 +1059,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .currency-btn.active {
   background: var(--c-primary);
   color: #FFFFFF;
-  box-shadow: 0 3px 10px rgba(30, 58, 138, 0.35);
+  box-shadow: 0 3px 10px rgba(122, 21, 28, 0.35);
 }
 
 .price-card {
@@ -1066,17 +1067,18 @@ html[lang="ar"] .brand-name .lang-ar {
   position: relative;
   background: #FFFFFF;
 }
+/* Featured Card: Highlighted in Velvet Maroon & Golden Sand */
 .price-card.featured {
-  border: 2.5px solid var(--c-gold-metallic);
+  border: 2.5px solid var(--c-primary);
   transform: translateY(-8px);
-  box-shadow: 0 18px 40px -6px rgba(245, 158, 11, 0.22), 0 6px 18px -2px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 18px 40px -6px rgba(122, 21, 28, 0.22), 0 6px 18px -2px rgba(226, 167, 111, 0.15);
 }
 .price-badge {
   position: absolute;
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--c-gold-gradient);
+  background: var(--c-primary);
   color: #FFFFFF;
   font-size: 0.76rem;
   font-weight: 800;
@@ -1084,7 +1086,8 @@ html[lang="ar"] .brand-name .lang-ar {
   border-radius: var(--radius-full);
   white-space: nowrap;
   letter-spacing: 0.04em;
-  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4);
+  border: 1px solid var(--c-gold-metallic);
+  box-shadow: 0 4px 14px rgba(122, 21, 28, 0.4);
 }
 .price-card h3 { color: var(--c-primary); font-size: 1.35rem; }
 .price-val-box { margin: 20px 0 12px; }
@@ -1115,7 +1118,7 @@ html[lang="ar"] .brand-name .lang-ar {
 }
 .price-card ul li svg {
   flex: none;
-  stroke: var(--c-accent-light);
+  stroke: var(--c-primary);
   margin-top: 3px;
 }
 
@@ -1130,7 +1133,7 @@ html[lang="ar"] .brand-name .lang-ar {
   box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
-  border: 1.5px solid rgba(245, 158, 11, 0.4);
+  border: 1.5px solid rgba(226, 167, 111, 0.45);
   margin-top: 20px;
 }
 .audio-showcase-box::before {
@@ -1141,7 +1144,7 @@ html[lang="ar"] .brand-name .lang-ar {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0) 70%);
+  background: radial-gradient(circle, rgba(226, 167, 111, 0.28) 0%, rgba(226, 167, 111, 0) 70%);
   pointer-events: none;
 }
 .audio-player-grid {
@@ -1183,16 +1186,16 @@ html[lang="ar"] .brand-name .lang-ar {
   border-color: var(--c-gold-metallic);
 }
 .audio-track-btn.active {
-  background: rgba(245, 158, 11, 0.24);
+  background: rgba(226, 167, 111, 0.24);
   border-color: var(--c-gold-metallic);
   color: var(--c-gold-light);
   font-weight: 700;
 }
 .audio-control-panel {
-  background: rgba(10, 15, 29, 0.75);
+  background: rgba(58, 5, 10, 0.78);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  border: 1.5px solid rgba(226, 167, 111, 0.35);
   border-radius: var(--radius-m);
   padding: 24px 28px;
   display: flex;
@@ -1210,14 +1213,14 @@ html[lang="ar"] .brand-name .lang-ar {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #FFFFFF;
+  color: var(--c-primary-deep);
   flex: none;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 4px 18px rgba(217, 119, 6, 0.5);
+  box-shadow: 0 4px 18px rgba(201, 130, 62, 0.5);
 }
 .play-btn-circle:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 24px rgba(217, 119, 6, 0.65);
+  box-shadow: 0 6px 24px rgba(201, 130, 62, 0.65);
 }
 .play-btn-circle svg { width: 28px; height: 28px; fill: currentColor; }
 .audio-info-row { flex: 1; min-width: 0; }
@@ -1294,7 +1297,7 @@ html[lang="ar"] .brand-name .lang-ar {
 }
 .trust-box:hover {
   transform: translateY(-8px);
-  border-color: rgba(30, 58, 138, 0.35);
+  border-color: rgba(122, 21, 28, 0.35);
   box-shadow: var(--shadow-hover);
 }
 .trust-box-icon {
@@ -1304,7 +1307,7 @@ html[lang="ar"] .brand-name .lang-ar {
   margin: 0 auto 18px;
   background: var(--c-primary-soft);
   color: var(--c-primary);
-  border: 1px solid rgba(37, 99, 235, 0.25);
+  border: 1px solid rgba(122, 21, 28, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1334,7 +1337,7 @@ html[lang="ar"] .brand-name .lang-ar {
   position: fixed;
   inset: 0;
   z-index: 999;
-  background: rgba(10, 15, 29, 0.78);
+  background: rgba(58, 5, 10, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -1358,7 +1361,7 @@ html[lang="ar"] .brand-name .lang-ar {
   overflow-y: auto;
   box-shadow: var(--shadow-modal);
   position: relative;
-  border: 2px solid rgba(245, 158, 11, 0.4);
+  border: 2px solid var(--c-gold-metallic);
   animation: modalPop 0.35s ease-out;
 }
 @keyframes modalPop {
@@ -1384,7 +1387,7 @@ html[lang="ar"] .brand-name .lang-ar {
   z-index: 10;
 }
 .modal-close-btn:hover {
-  background: var(--c-gold-metallic);
+  background: var(--c-primary);
   color: #FFFFFF;
   border-color: transparent;
 }
@@ -1434,7 +1437,7 @@ html[lang="ar"] .brand-name .lang-ar {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: rgba(30, 58, 138, 0.12);
+  background: rgba(122, 21, 28, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1446,7 +1449,7 @@ html[lang="ar"] .brand-name .lang-ar {
 }
 .step-item.completed .step-item-num {
   background: var(--c-gold-metallic);
-  color: #FFFFFF;
+  color: var(--c-primary-deep);
 }
 
 .modal-body { padding: 26px 34px; }
@@ -1493,7 +1496,7 @@ html[lang="ar"] .brand-name .lang-ar {
   border-color: var(--c-primary);
   background: var(--c-primary-soft);
   color: var(--c-primary);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 0 0 2px rgba(122, 21, 28, 0.35);
 }
 .chip-option:hover .chip-content {
   border-color: var(--c-primary-light);
@@ -1513,7 +1516,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .input-field:focus {
   outline: none;
   border-color: var(--c-primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+  box-shadow: 0 0 0 3px rgba(122, 21, 28, 0.2);
 }
 
 .modal-footer {
