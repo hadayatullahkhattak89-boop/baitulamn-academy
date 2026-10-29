@@ -1,43 +1,46 @@
 /* =========================================================
-   Bait-ul-Amn Online Academy — Premium Sacred Mosque Theme
-   Inspired by Masjid Prayer Times Display Palette:
-   Royal Velvet Maroon (#7A151C), Golden Amber Sand (#E2A76F) & Warm Linen Canvas (#FAF6F0)
+   Bait-ul-Amn Online Academy — Imperial Navy & Radiant Gold Theme
+   Prestige Islamic Educational Palette:
+   Imperial Midnight Navy (#0A2540), Royal Sapphire (#184E77),
+   Radiant Metallic Gold (#D4AF37), Islamic Emerald (#059669)
+   & Crisp Porcelain Slate Canvas (#F8FAFC, #FFFFFF)
    ========================================================= */
 
 :root {
-  /* --- Primary Jewel Palette (Royal Velvet Maroon & Burgundy) --- */
-  --c-primary: #7A151C;         /* Deep Royal Velvet Maroon (As in Fajr & Banner) */
-  --c-primary-dark: #580B11;    /* Midnight Wine Maroon */
-  --c-primary-deep: #3A050A;    /* Imperial Deep Burgundy */
-  --c-primary-light: #9B1D25;   /* Vibrant Crimson Maroon */
-  --c-primary-soft: #FDF3F3;    /* Delicate Rose-Cream Tint */
-  --c-primary-glow: rgba(122, 21, 28, 0.32);
+  /* --- Primary Jewel Palette (Imperial Midnight Navy & Royal Sapphire) --- */
+  --c-primary: #0A2540;         /* Imperial Midnight Navy (Authoritative, Scholarly & Trustworthy) */
+  --c-primary-dark: #061826;    /* Deep Abyssal Navy */
+  --c-primary-deep: #030D17;    /* Midnight Navy Black (Header, Footer & Dark accents) */
+  --c-primary-light: #184E77;   /* Royal Sapphire Navy */
+  --c-primary-soft: #EEF4F9;    /* Crisp Ice-Silk Navy Tint */
+  --c-primary-glow: rgba(10, 37, 64, 0.28);
+  --c-sage: #EEF4F9;            /* Soft Tint Surface */
 
-  /* --- Secondary & Accent (Golden Sandstone & Amber Peach) --- */
-  --c-gold: #C9823E;            /* Warm Terracotta Amber */
-  --c-gold-metallic: #E2A76F;   /* Radiant Sandstone Peach (Prayer Badge Circles) */
-  --c-gold-light: #F8E3CE;      /* Soft Peach Champagne */
-  --c-gold-dark: #A56024;       /* Deep Antique Bronze Gold */
-  --c-gold-gradient: linear-gradient(135deg, #F3C491 0%, #E2A76F 45%, #C9823E 100%);
-  --c-gold-glow: rgba(226, 167, 111, 0.38);
+  /* --- Secondary & Accent (Radiant Metallic Gold & Warm Brass) --- */
+  --c-gold: #C59B27;            /* Refined Islamic Gold */
+  --c-gold-metallic: #D4AF37;   /* Radiant Metallic Gold */
+  --c-gold-light: #FEF3C7;      /* Warm Champagne Gold Tint */
+  --c-gold-dark: #9A7516;       /* Deep Antique Burnished Gold */
+  --c-gold-gradient: linear-gradient(135deg, #FBE38E 0%, #D4AF37 50%, #A67C1E 100%);
+  --c-gold-glow: rgba(212, 175, 55, 0.35);
 
-  /* --- Complementary Pure Accent (Sage-Mint Accent) --- */
-  --c-accent: #2E7D32;          /* Islamic Emerald Green */
-  --c-accent-light: #43A047;
-  --c-accent-soft: #E8F5E9;
+  /* --- Complementary Pure Accent (Islamic Emerald Green) --- */
+  --c-accent: #059669;          /* Islamic Emerald Green (Verified checks & Trust badges) */
+  --c-accent-light: #10B981;
+  --c-accent-soft: #ECFDF5;
 
-  /* --- Canvas & Surfaces (Warm Linen & Sandstone Pearl) --- */
-  --c-bg: #FAF6F0;              /* Warm Linen / Sandstone Ivory Canvas */
-  --c-bg-alt: #F3ECE1;          /* Subtle Warm Sand Alternate Surface */
+  /* --- Canvas & Surfaces (Crisp Porcelain Slate & Pure White) --- */
+  --c-bg: #F8FAFC;              /* Crisp Porcelain Slate Canvas (Zero muddy yellow, ultra clean) */
+  --c-bg-alt: #F1F5F9;          /* Soft Clean Slate Alternate Surface */
   --c-surface: #FFFFFF;         /* Crisp Pure White Surface */
   --c-surface-card: #FFFFFF;
-  --c-border: #E8DDD0;          /* Warm Soft Border */
-  --c-border-strong: #D5C3AF;   /* Defined Border */
+  --c-border: #E2E8F0;          /* Subtle Slate Border */
+  --c-border-strong: #CBD5E1;   /* Defined Crisp Border */
 
-  /* --- High-Contrast Typography Inks (Deep Espresso & Warm Charcoal) --- */
-  --c-ink: #2B1819;             /* Deep Espresso Ink (High Contrast) */
-  --c-ink-soft: #4E3637;        /* Warm Charcoal (Body Copy) */
-  --c-ink-muted: #7D6364;       /* Warm Taupe (Meta Details) */
+  /* --- High-Contrast Typography Inks (Slate 900 & Slate 700) --- */
+  --c-ink: #0F172A;             /* Slate 900 — Maximum readability & sharpness */
+  --c-ink-soft: #334155;        /* Slate 700 — Crisp body copy */
+  --c-ink-muted: #64748B;       /* Slate 500 — Clean meta details */
   --c-white: #FFFFFF;
 
   /* --- Geometry & Elevation --- */
@@ -47,11 +50,11 @@
   --radius-l: 26px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 8px -2px rgba(43, 24, 25, 0.06);
-  --shadow-soft: 0 4px 18px -2px rgba(43, 24, 25, 0.06), 0 2px 6px -1px rgba(43, 24, 25, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(58, 5, 10, 0.08), 0 4px 12px -2px rgba(58, 5, 10, 0.04);
-  --shadow-hover: 0 20px 42px -8px rgba(122, 21, 28, 0.18), 0 8px 20px -4px rgba(226, 167, 111, 0.18);
-  --shadow-modal: 0 25px 60px -15px rgba(58, 5, 10, 0.55);
+  --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.06);
+  --shadow-soft: 0 4px 18px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(10, 37, 64, 0.08), 0 4px 12px -2px rgba(10, 37, 64, 0.04);
+  --shadow-hover: 0 20px 42px -8px rgba(10, 37, 64, 0.16), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-modal: 0 25px 60px -15px rgba(3, 13, 23, 0.6);
 
   --container: 1200px;
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -132,7 +135,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  border-bottom: 1.5px solid rgba(226, 167, 111, 0.35);
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.35);
 }
 .announce-bar a {
   text-decoration: underline;
@@ -155,15 +158,15 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 2px solid var(--c-gold-metallic);
-  box-shadow: 0 4px 24px -6px rgba(58, 5, 10, 0.08);
+  box-shadow: 0 4px 24px -6px rgba(3, 13, 23, 0.08);
   transition: all var(--transition-fast);
 }
 
 .header-top {
   padding: 10px 24px;
   text-align: center;
-  border-bottom: 1px solid rgba(122, 21, 28, 0.1);
-  background: linear-gradient(90deg, rgba(253, 243, 243, 0.6) 0%, rgba(248, 227, 206, 0.45) 50%, rgba(253, 243, 243, 0.6) 100%);
+  border-bottom: 1px solid rgba(10, 37, 64, 0.1);
+  background: linear-gradient(90deg, rgba(238, 244, 249, 0.6) 0%, rgba(254, 243, 199, 0.45) 50%, rgba(238, 244, 249, 0.6) 100%);
 }
 .header-top .brand {
   display: inline-flex;
@@ -175,7 +178,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   width: 44px;
   height: 44px;
   flex: none;
-  filter: drop-shadow(0 2px 6px rgba(122, 21, 28, 0.2));
+  filter: drop-shadow(0 2px 6px rgba(10, 37, 64, 0.2));
 }
 .brand-name {
   font-weight: 800;
@@ -221,7 +224,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .main-nav a.active {
   background: linear-gradient(135deg, var(--c-primary), var(--c-primary-light));
   color: #FFFFFF;
-  box-shadow: 0 4px 14px -2px rgba(122, 21, 28, 0.4);
+  box-shadow: 0 4px 14px -2px rgba(10, 37, 64, 0.4);
 }
 
 .header-right { display: flex; align-items: center; gap: 14px; }
@@ -253,7 +256,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .lang-switch button.active {
   background: var(--c-primary);
   color: #FFFFFF;
-  box-shadow: 0 2px 8px rgba(122, 21, 28, 0.3);
+  box-shadow: 0 2px 8px rgba(10, 37, 64, 0.3);
 }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
@@ -281,26 +284,26 @@ html[lang="ar"] .brand-name .lang-ar {
 .btn-primary {
   background: linear-gradient(135deg, var(--c-primary-light) 0%, var(--c-primary) 100%);
   color: #FFFFFF;
-  box-shadow: 0 6px 20px -4px rgba(122, 21, 28, 0.45);
+  box-shadow: 0 6px 20px -4px rgba(10, 37, 64, 0.45);
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-dark) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 26px -6px rgba(122, 21, 28, 0.6);
+  box-shadow: 0 10px 26px -6px rgba(10, 37, 64, 0.6);
   color: #FFFFFF;
 }
 
 .btn-gold {
   background: var(--c-gold-gradient);
-  color: var(--c-primary-deep);
+  color: #0A2540;
   font-weight: 800;
-  box-shadow: 0 6px 22px -4px rgba(201, 130, 62, 0.45);
+  box-shadow: 0 6px 22px -4px rgba(197, 155, 39, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -6px rgba(201, 130, 62, 0.6);
-  color: var(--c-primary-deep);
+  box-shadow: 0 12px 30px -6px rgba(197, 155, 39, 0.6);
+  color: #0A2540;
 }
 
 .btn-outline {
@@ -356,9 +359,9 @@ html[lang="ar"] .brand-name .lang-ar {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(226, 167, 111, 0.32), transparent 70%),
-    radial-gradient(circle at 85% 85%, rgba(155, 29, 37, 0.28), transparent 55%),
-    linear-gradient(180deg, rgba(58, 5, 10, 0.92) 0%, rgba(88, 11, 17, 0.95) 55%, rgba(58, 5, 10, 0.98) 100%);
+    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(212, 175, 55, 0.32), transparent 70%),
+    radial-gradient(circle at 85% 85%, rgba(24, 78, 119, 0.28), transparent 55%),
+    linear-gradient(180deg, rgba(3, 13, 23, 0.92) 0%, rgba(6, 24, 38, 0.95) 55%, rgba(3, 13, 23, 0.98) 100%);
 }
 
 .eyebrow {
@@ -373,8 +376,8 @@ html[lang="ar"] .brand-name .lang-ar {
   margin-bottom: 22px;
 }
 .hero .eyebrow {
-  background: rgba(58, 5, 10, 0.75);
-  border: 1.5px solid rgba(226, 167, 111, 0.55);
+  background: rgba(3, 13, 23, 0.75);
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
   padding: 8px 22px;
   border-radius: var(--radius-full);
   color: var(--c-gold-light);
@@ -426,8 +429,8 @@ html[lang="ar"] .brand-name .lang-ar {
   text-align: center;
   background-color: #FFFFFF;
   background-image:
-    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(248, 227, 206, 0.6), transparent 70%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237A151C' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(254, 243, 199, 0.6), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230A2540' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-bottom: 1px solid var(--c-border);
 }
 .page-hero h1 {
@@ -448,7 +451,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .section { padding: 86px 0; }
 .section-alt {
   background-color: var(--c-bg-alt);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237A151C' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230A2540' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-top: 1px solid var(--c-border);
   border-bottom: 1px solid var(--c-border);
 }
@@ -467,7 +470,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .section-dark .section-head h2 { color: #FFFFFF; }
 
 /* =========================================================
-   Grids & Premium Cards (Styled as in Prayer Time Badges)
+   Grids & Premium Cards (Illuminated Medallions)
    ========================================================= */
 .grid { display: grid; gap: 30px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
@@ -497,13 +500,13 @@ html[lang="ar"] .brand-name .lang-ar {
 .card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
-  border-color: rgba(122, 21, 28, 0.35);
+  border-color: rgba(10, 37, 64, 0.35);
 }
 .card:hover::before {
   background: var(--c-gold-gradient);
 }
 
-/* Circular Badge Number - Like the Circular Badges in Prayer Time Display */
+/* Circular Badge Number - Illuminated Medallion Accent */
 .step-num {
   width: 48px;
   height: 48px;
@@ -516,7 +519,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-weight: 800;
   margin-bottom: 18px;
   font-family: 'Petrona', serif;
-  box-shadow: 0 4px 14px rgba(201, 130, 62, 0.35);
+  box-shadow: 0 4px 14px rgba(197, 155, 39, 0.35);
 }
 
 /* Course Cards */
@@ -539,7 +542,7 @@ html[lang="ar"] .brand-name .lang-ar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(58, 5, 10, 0.15) 0%, rgba(58, 5, 10, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(3, 13, 23, 0.15) 0%, rgba(3, 13, 23, 0.8) 100%);
 }
 .course-card .step-num {
   background: var(--c-gold-gradient);
@@ -571,7 +574,7 @@ html[lang="ar"] .brand-name .lang-ar {
   color: var(--c-primary);
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(122, 21, 28, 0.2);
+  border: 1px solid rgba(10, 37, 64, 0.2);
 }
 
 /* Teacher Cards */
@@ -593,7 +596,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-weight: 800;
   font-size: 1.75rem;
   font-family: 'Petrona', serif;
-  box-shadow: 0 6px 20px rgba(122, 21, 28, 0.2);
+  box-shadow: 0 6px 20px rgba(10, 37, 64, 0.2);
 }
 .teacher-photo span {
   width: 100%;
@@ -641,7 +644,7 @@ html[lang="ar"] .brand-name .lang-ar {
   font-weight: 500;
 }
 .stars {
-  color: #E2A76F;
+  color: var(--c-gold);
   letter-spacing: 2px;
   margin-bottom: 12px;
   display: block;
@@ -661,7 +664,7 @@ html[lang="ar"] .brand-name .lang-ar {
   height: 52px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
-  border: 1px solid rgba(122, 21, 28, 0.22);
+  border: 1px solid rgba(10, 37, 64, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,13 +696,13 @@ html[lang="ar"] .brand-name .lang-ar {
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow-card);
-  border: 1px solid rgba(122, 21, 28, 0.25);
+  border: 1px solid rgba(10, 37, 64, 0.25);
 }
 .split-media::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(155deg, rgba(58, 5, 10, 0.85) 0%, rgba(122, 21, 28, 0.45) 50%, rgba(226, 167, 111, 0.25) 100%);
+  background: linear-gradient(155deg, rgba(3, 13, 23, 0.85) 0%, rgba(10, 37, 64, 0.45) 50%, rgba(212, 175, 55, 0.25) 100%);
 }
 .split-media svg {
   width: 32%;
@@ -780,7 +783,7 @@ html[lang="ar"] .brand-name .lang-ar {
   height: 52px;
   border-radius: var(--radius-s);
   background: var(--c-primary-soft);
-  border: 1px solid rgba(122, 21, 28, 0.22);
+  border: 1px solid rgba(10, 37, 64, 0.22);
   flex: none;
   display: flex;
   align-items: center;
@@ -819,7 +822,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .form-field select:focus {
   outline: none;
   border-color: var(--c-primary);
-  box-shadow: 0 0 0 3px rgba(122, 21, 28, 0.18);
+  box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.18);
 }
 .form-field textarea { min-height: 120px; resize: vertical; }
 .map-embed {
@@ -840,7 +843,7 @@ html[lang="ar"] .brand-name .lang-ar {
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  border: 1.5px solid rgba(226, 167, 111, 0.4);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
   box-shadow: var(--shadow-card);
 }
 .cta-band h2 { color: #FFFFFF; }
@@ -850,7 +853,7 @@ html[lang="ar"] .brand-name .lang-ar {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 85% 20%, rgba(226, 167, 111, 0.35), transparent 60%),
+    radial-gradient(circle at 85% 20%, rgba(212, 175, 55, 0.35), transparent 60%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M45 15 L51 33 L69 39 L51 45 L45 63 L39 45 L21 39 L39 33 Z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -920,7 +923,7 @@ html[lang="ar"] .brand-name .lang-ar {
   color: var(--c-primary-deep);
   transform: translateY(-3px);
   border-color: transparent;
-  box-shadow: 0 4px 16px rgba(226, 167, 111, 0.45);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.45);
 }
 
 .watermark-arch {
@@ -981,7 +984,7 @@ html[lang="ar"] .brand-name .lang-ar {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 167, 111, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: var(--radius-full);
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -1059,7 +1062,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .currency-btn.active {
   background: var(--c-primary);
   color: #FFFFFF;
-  box-shadow: 0 3px 10px rgba(122, 21, 28, 0.35);
+  box-shadow: 0 3px 10px rgba(10, 37, 64, 0.35);
 }
 
 .price-card {
@@ -1071,7 +1074,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .price-card.featured {
   border: 2.5px solid var(--c-primary);
   transform: translateY(-8px);
-  box-shadow: 0 18px 40px -6px rgba(122, 21, 28, 0.22), 0 6px 18px -2px rgba(226, 167, 111, 0.15);
+  box-shadow: 0 18px 40px -6px rgba(10, 37, 64, 0.22), 0 6px 18px -2px rgba(212, 175, 55, 0.15);
 }
 .price-badge {
   position: absolute;
@@ -1087,7 +1090,7 @@ html[lang="ar"] .brand-name .lang-ar {
   white-space: nowrap;
   letter-spacing: 0.04em;
   border: 1px solid var(--c-gold-metallic);
-  box-shadow: 0 4px 14px rgba(122, 21, 28, 0.4);
+  box-shadow: 0 4px 14px rgba(10, 37, 64, 0.4);
 }
 .price-card h3 { color: var(--c-primary); font-size: 1.35rem; }
 .price-val-box { margin: 20px 0 12px; }
@@ -1133,7 +1136,7 @@ html[lang="ar"] .brand-name .lang-ar {
   box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
-  border: 1.5px solid rgba(226, 167, 111, 0.45);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
   margin-top: 20px;
 }
 .audio-showcase-box::before {
@@ -1144,7 +1147,7 @@ html[lang="ar"] .brand-name .lang-ar {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(226, 167, 111, 0.28) 0%, rgba(226, 167, 111, 0) 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.28) 0%, rgba(212, 175, 55, 0) 70%);
   pointer-events: none;
 }
 .audio-player-grid {
@@ -1186,16 +1189,16 @@ html[lang="ar"] .brand-name .lang-ar {
   border-color: var(--c-gold-metallic);
 }
 .audio-track-btn.active {
-  background: rgba(226, 167, 111, 0.24);
+  background: rgba(212, 175, 55, 0.24);
   border-color: var(--c-gold-metallic);
   color: var(--c-gold-light);
   font-weight: 700;
 }
 .audio-control-panel {
-  background: rgba(58, 5, 10, 0.78);
+  background: rgba(3, 13, 23, 0.78);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1.5px solid rgba(226, 167, 111, 0.35);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: var(--radius-m);
   padding: 24px 28px;
   display: flex;
@@ -1216,11 +1219,11 @@ html[lang="ar"] .brand-name .lang-ar {
   color: var(--c-primary-deep);
   flex: none;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 4px 18px rgba(201, 130, 62, 0.5);
+  box-shadow: 0 4px 18px rgba(197, 155, 39, 0.5);
 }
 .play-btn-circle:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 24px rgba(201, 130, 62, 0.65);
+  box-shadow: 0 6px 24px rgba(197, 155, 39, 0.65);
 }
 .play-btn-circle svg { width: 28px; height: 28px; fill: currentColor; }
 .audio-info-row { flex: 1; min-width: 0; }
@@ -1297,7 +1300,7 @@ html[lang="ar"] .brand-name .lang-ar {
 }
 .trust-box:hover {
   transform: translateY(-8px);
-  border-color: rgba(122, 21, 28, 0.35);
+  border-color: rgba(10, 37, 64, 0.35);
   box-shadow: var(--shadow-hover);
 }
 .trust-box-icon {
@@ -1307,7 +1310,7 @@ html[lang="ar"] .brand-name .lang-ar {
   margin: 0 auto 18px;
   background: var(--c-primary-soft);
   color: var(--c-primary);
-  border: 1px solid rgba(122, 21, 28, 0.22);
+  border: 1px solid rgba(10, 37, 64, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1337,7 +1340,7 @@ html[lang="ar"] .brand-name .lang-ar {
   position: fixed;
   inset: 0;
   z-index: 999;
-  background: rgba(58, 5, 10, 0.8);
+  background: rgba(3, 13, 23, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -1437,7 +1440,7 @@ html[lang="ar"] .brand-name .lang-ar {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: rgba(122, 21, 28, 0.12);
+  background: rgba(10, 37, 64, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1496,7 +1499,7 @@ html[lang="ar"] .brand-name .lang-ar {
   border-color: var(--c-primary);
   background: var(--c-primary-soft);
   color: var(--c-primary);
-  box-shadow: 0 0 0 2px rgba(122, 21, 28, 0.35);
+  box-shadow: 0 0 0 2px rgba(10, 37, 64, 0.35);
 }
 .chip-option:hover .chip-content {
   border-color: var(--c-primary-light);
@@ -1516,7 +1519,7 @@ html[lang="ar"] .brand-name .lang-ar {
 .input-field:focus {
   outline: none;
   border-color: var(--c-primary);
-  box-shadow: 0 0 0 3px rgba(122, 21, 28, 0.2);
+  box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.2);
 }
 
 .modal-footer {
