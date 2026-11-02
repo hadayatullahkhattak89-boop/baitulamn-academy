@@ -6,59 +6,147 @@
    & Crisp Porcelain Slate Canvas (#F8FAFC, #FFFFFF)
    ========================================================= */
 
-:root {
-  /* --- Primary Jewel Palette (Imperial Midnight Navy & Royal Sapphire) --- */
-  --c-primary: #0A2540;         /* Imperial Midnight Navy (Authoritative, Scholarly & Trustworthy) */
-  --c-primary-dark: #061826;    /* Deep Abyssal Navy */
-  --c-primary-deep: #030D17;    /* Midnight Navy Black (Header, Footer & Dark accents) */
-  --c-primary-light: #184E77;   /* Royal Sapphire Navy */
-  --c-primary-soft: #EEF4F9;    /* Crisp Ice-Silk Navy Tint */
-  --c-primary-glow: rgba(10, 37, 64, 0.28);
-  --c-sage: #EEF4F9;            /* Soft Tint Surface */
+:root,
+[data-theme="sapphire"] {
+  /* =========================================================
+     THEME 1: Royal Sapphire & Radiant Gold (Default)
+     Vibrant, prestigious, warm & spiritually uplifting
+     ========================================================= */
+  --c-primary: #0E3A64;         /* Rich Royal Sapphire Blue (Vibrant & Noble) */
+  --c-primary-light: #1A5C9B;   /* Bright Azure Sapphire */
+  --c-primary-dark: #0A2B4C;    /* Deep Royal Navy */
+  --c-primary-deep: #061C33;    /* Midnight Sapphire */
+  --c-primary-soft: #EDF5FC;    /* Soft Sky Silk Tint */
+  --c-primary-glow: rgba(14, 58, 100, 0.25);
+  --c-sage: #EDF5FC;
 
-  /* --- Secondary & Accent (Radiant Metallic Gold & Warm Brass) --- */
+  /* Radiant Metallic Gold & Warm Brass */
   --c-gold: #C59B27;            /* Refined Islamic Gold */
   --c-gold-metallic: #D4AF37;   /* Radiant Metallic Gold */
-  --c-gold-light: #FEF3C7;      /* Warm Champagne Gold Tint */
-  --c-gold-dark: #9A7516;       /* Deep Antique Burnished Gold */
-  --c-gold-gradient: linear-gradient(135deg, #FBE38E 0%, #D4AF37 50%, #A67C1E 100%);
+  --c-gold-light: #FEF6DC;      /* Warm Champagne Gold Tint */
+  --c-gold-dark: #987216;       /* Deep Antique Burnished Gold */
+  --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
   --c-gold-glow: rgba(212, 175, 55, 0.35);
 
-  /* --- Complementary Pure Accent (Islamic Emerald Green) --- */
-  --c-accent: #059669;          /* Islamic Emerald Green (Verified checks & Trust badges) */
+  /* Complementary Pure Accent (Islamic Emerald Green) */
+  --c-accent: #059669;
   --c-accent-light: #10B981;
   --c-accent-soft: #ECFDF5;
 
-  /* --- Canvas & Surfaces (Crisp Porcelain Slate & Pure White) --- */
-  --c-bg: #F8FAFC;              /* Crisp Porcelain Slate Canvas (Zero muddy yellow, ultra clean) */
-  --c-bg-alt: #F1F5F9;          /* Soft Clean Slate Alternate Surface */
+  /* Canvas & Surfaces (Warm Alabaster Silk & Pure White) */
+  --c-bg: #FAF9F6;              /* Warm Alabaster Silk (Inviting & Gentle) */
+  --c-bg-alt: #F2ECE4;          /* Warm Linen Stone Surface */
   --c-surface: #FFFFFF;         /* Crisp Pure White Surface */
   --c-surface-card: #FFFFFF;
-  --c-border: #E2E8F0;          /* Subtle Slate Border */
-  --c-border-strong: #CBD5E1;   /* Defined Crisp Border */
+  --c-border: #E6DFD5;          /* Delicate Warm Border */
+  --c-border-strong: #D2C7B8;   /* Defined Border */
 
-  /* --- High-Contrast Typography Inks (Slate 900 & Slate 700) --- */
-  --c-ink: #0F172A;             /* Slate 900 — Maximum readability & sharpness */
-  --c-ink-soft: #334155;        /* Slate 700 — Crisp body copy */
-  --c-ink-muted: #64748B;       /* Slate 500 — Clean meta details */
+  /* High-Contrast Typography Inks */
+  --c-ink: #0F172A;             /* Slate 900 - Ultra-Sharp */
+  --c-ink-soft: #334155;        /* Slate 700 - Body Copy */
+  --c-ink-muted: #64748B;       /* Slate 500 - Meta Details */
   --c-white: #FFFFFF;
 
-  /* --- Geometry & Elevation --- */
+  /* Geometry & Elevation */
   --radius-xs: 6px;
   --radius-s: 10px;
   --radius-m: 18px;
   --radius-l: 26px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.06);
-  --shadow-soft: 0 4px 18px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(10, 37, 64, 0.08), 0 4px 12px -2px rgba(10, 37, 64, 0.04);
-  --shadow-hover: 0 20px 42px -8px rgba(10, 37, 64, 0.16), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
-  --shadow-modal: 0 25px 60px -15px rgba(3, 13, 23, 0.6);
+  --shadow-sm: 0 2px 8px -2px rgba(14, 58, 100, 0.06);
+  --shadow-soft: 0 4px 18px -2px rgba(14, 58, 100, 0.06), 0 2px 6px -1px rgba(14, 58, 100, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(14, 58, 100, 0.08), 0 4px 12px -2px rgba(14, 58, 100, 0.04);
+  --shadow-hover: 0 20px 42px -8px rgba(14, 58, 100, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-modal: 0 25px 60px -15px rgba(6, 28, 51, 0.6);
 
   --container: 1200px;
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="emerald"] {
+  /* =========================================================
+     THEME 2: Sacred Emerald & Warm Amber Gold
+     Classic Rawdah Green & Quranic Illumination
+     ========================================================= */
+  --c-primary: #065F46;         /* Royal Islamic Emerald */
+  --c-primary-light: #0D8262;   /* Vibrant Jade */
+  --c-primary-dark: #044332;    /* Deep Forest */
+  --c-primary-deep: #022C20;    /* Midnight Pine */
+  --c-primary-soft: #ECFDF5;    /* Mint Dew Tint */
+  --c-primary-glow: rgba(6, 95, 70, 0.25);
+  --c-sage: #ECFDF5;
+
+  --c-gold: #C59B27;
+  --c-gold-metallic: #D4AF37;
+  --c-gold-light: #FEF9E7;
+  --c-gold-dark: #987216;
+  --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
+  --c-gold-glow: rgba(212, 175, 55, 0.35);
+
+  --c-accent: #D4AF37;
+  --c-accent-light: #FDE68A;
+  --c-accent-soft: #FEF9E7;
+
+  --c-bg: #FAFBF9;
+  --c-bg-alt: #EFF4EE;
+  --c-surface: #FFFFFF;
+  --c-surface-card: #FFFFFF;
+  --c-border: #E0E7DC;
+  --c-border-strong: #C9D4C4;
+
+  --c-ink: #0A1C16;
+  --c-ink-soft: #234338;
+  --c-ink-muted: #4B6E61;
+
+  --shadow-sm: 0 2px 8px -2px rgba(6, 95, 70, 0.06);
+  --shadow-soft: 0 4px 18px -2px rgba(6, 95, 70, 0.06), 0 2px 6px -1px rgba(6, 95, 70, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(6, 95, 70, 0.08), 0 4px 12px -2px rgba(6, 95, 70, 0.04);
+  --shadow-hover: 0 20px 42px -8px rgba(6, 95, 70, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-modal: 0 25px 60px -15px rgba(2, 44, 32, 0.6);
+}
+
+[data-theme="maroon"] {
+  /* =========================================================
+     THEME 3: Imperial Velvet Maroon & Champagne Gold
+     Noble, warm, prestigious Islamic heritage palette
+     ========================================================= */
+  --c-primary: #781926;         /* Refined Jewel Velvet Maroon */
+  --c-primary-light: #9C2434;   /* Imperial Crimson */
+  --c-primary-dark: #58101B;    /* Deep Wine */
+  --c-primary-deep: #3A0811;    /* Midnight Burgundy */
+  --c-primary-soft: #FDF2F4;    /* Rose Silk Tint */
+  --c-primary-glow: rgba(120, 25, 38, 0.25);
+  --c-sage: #FDF2F4;
+
+  --c-gold: #C59B27;
+  --c-gold-metallic: #D4AF37;
+  --c-gold-light: #FEF6DC;
+  --c-gold-dark: #987216;
+  --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
+  --c-gold-glow: rgba(212, 175, 55, 0.35);
+
+  --c-accent: #059669;
+  --c-accent-light: #10B981;
+  --c-accent-soft: #ECFDF5;
+
+  --c-bg: #FAF8F6;
+  --c-bg-alt: #F3ECE6;
+  --c-surface: #FFFFFF;
+  --c-surface-card: #FFFFFF;
+  --c-border: #E8DDD6;
+  --c-border-strong: #D5C5BC;
+
+  --c-ink: #210F13;
+  --c-ink-soft: #4A2E33;
+  --c-ink-muted: #745157;
+
+  --shadow-sm: 0 2px 8px -2px rgba(120, 25, 38, 0.06);
+  --shadow-soft: 0 4px 18px -2px rgba(120, 25, 38, 0.06), 0 2px 6px -1px rgba(120, 25, 38, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(120, 25, 38, 0.08), 0 4px 12px -2px rgba(120, 25, 38, 0.04);
+  --shadow-hover: 0 20px 42px -8px rgba(120, 25, 38, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-modal: 0 25px 60px -15px rgba(58, 8, 17, 0.6);
 }
 
 /* =========================================================
@@ -394,7 +482,7 @@ html[lang="ar"] .main-nav a {
 
 .btn-gold {
   background: var(--c-gold-gradient);
-  color: #0A2540;
+  color: var(--c-primary-deep);
   font-weight: 800;
   box-shadow: 0 6px 22px -4px rgba(10, 37, 64, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -402,7 +490,7 @@ html[lang="ar"] .main-nav a {
 .btn-gold:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px -6px rgba(197, 155, 39, 0.6);
-  color: #0A2540;
+  color: var(--c-primary-deep);
 }
 
 .btn-outline {
@@ -458,9 +546,10 @@ html[lang="ar"] .main-nav a {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(212, 175, 55, 0.32), transparent 70%),
-    radial-gradient(circle at 85% 85%, rgba(24, 78, 119, 0.28), transparent 55%),
-    linear-gradient(180deg, rgba(3, 13, 23, 0.92) 0%, rgba(6, 24, 38, 0.95) 55%, rgba(3, 13, 23, 0.98) 100%);
+    radial-gradient(ellipse 950px 550px at 50% 10%, rgba(212, 175, 55, 0.35), transparent 70%),
+    radial-gradient(circle at 85% 85%, var(--c-primary-light), transparent 55%),
+    linear-gradient(180deg, var(--c-primary-deep) 0%, var(--c-primary) 55%, var(--c-primary-deep) 100%);
+  opacity: 0.94;
 }
 
 .eyebrow {
@@ -475,7 +564,7 @@ html[lang="ar"] .main-nav a {
   margin-bottom: 22px;
 }
 .hero .eyebrow {
-  background: rgba(3, 13, 23, 0.75);
+  background: var(--c-primary-deep);
   border: 1.5px solid rgba(212, 175, 55, 0.55);
   padding: 8px 22px;
   border-radius: var(--radius-full);
@@ -641,7 +730,7 @@ html[lang="ar"] .main-nav a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(3, 13, 23, 0.15) 0%, rgba(3, 13, 23, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, var(--c-primary-deep) 100%);
 }
 .course-card .step-num {
   background: var(--c-gold-gradient);
@@ -801,7 +890,7 @@ html[lang="ar"] .main-nav a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(155deg, rgba(3, 13, 23, 0.85) 0%, rgba(10, 37, 64, 0.45) 50%, rgba(212, 175, 55, 0.25) 100%);
+  background: linear-gradient(155deg, var(--c-primary-deep) 0%, var(--c-primary) 50%, rgba(212, 175, 55, 0.25) 100%);
 }
 .split-media svg {
   width: 32%;
@@ -1294,7 +1383,7 @@ html[lang="ar"] .main-nav a {
   font-weight: 700;
 }
 .audio-control-panel {
-  background: rgba(3, 13, 23, 0.78);
+  background: var(--c-primary-deep);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1.5px solid rgba(212, 175, 55, 0.35);
@@ -1439,7 +1528,7 @@ html[lang="ar"] .main-nav a {
   position: fixed;
   inset: 0;
   z-index: 999;
-  background: rgba(3, 13, 23, 0.8);
+  background: var(--c-primary-deep);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -1804,4 +1893,69 @@ html[lang="ar"] .main-nav a {
   .modal-header, .modal-body, .modal-footer, .modal-steps-bar { padding-inline: 20px; }
   .chips-grid { grid-template-columns: 1fr 1fr; }
   .audio-showcase-box { padding: 28px 20px; }
+}
+
+/* =========================================================
+   Floating Theme Switcher Pill (Discreet, Elegant, Accessible)
+   ========================================================= */
+.theme-switcher-pill {
+  position: fixed;
+  bottom: 24px;
+  inset-inline-start: 86px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--c-surface);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--c-border);
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.12);
+  transition: all var(--transition-fast);
+}
+.theme-switcher-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.18);
+  border-color: var(--c-gold-metallic);
+}
+.theme-pill-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--c-ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.theme-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.theme-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+.theme-dot:hover {
+  transform: scale(1.2);
+}
+.theme-dot.active {
+  outline: 2px solid var(--c-gold-metallic);
+  outline-offset: 1px;
+  transform: scale(1.15);
+}
+.theme-dot-sapphire { background: #0E3A64; }
+.theme-dot-emerald  { background: #065F46; }
+.theme-dot-maroon   { background: #781926; }
+
+@media (max-width: 760px) {
+  .theme-switcher-pill {
+    bottom: 82px;
+    inset-inline-start: 16px;
+    padding: 5px 10px;
+  }
 }
