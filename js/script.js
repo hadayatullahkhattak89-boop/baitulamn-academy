@@ -443,51 +443,11 @@
   }
 
 
-  function applyTheme(theme) {
-    if (!theme || ['sapphire', 'emerald', 'maroon'].indexOf(theme) === -1) {
-      theme = 'sapphire';
-    }
-    document.documentElement.setAttribute('data-theme', theme);
-    document.querySelectorAll('.theme-dot').forEach(function (dot) {
-      dot.classList.toggle('active', dot.getAttribute('data-theme-val') === theme);
-    });
-    try {
-      localStorage.setItem('baitulamn-theme', theme);
-    } catch (e) {}
-  }
-
-  function initThemeSwitcher() {
-    var saved = 'sapphire';
-    try {
-      saved = localStorage.getItem('baitulamn-theme') || 'sapphire';
-    } catch (e) {}
-    applyTheme(saved);
-
-    if (!document.querySelector('.theme-switcher-pill')) {
-      var pill = document.createElement('div');
-      pill.className = 'theme-switcher-pill';
-      pill.setAttribute('aria-label', 'Color Palette Switcher');
-      pill.innerHTML =
-        '<span class="theme-pill-label">' +
-        '<span class="lang lang-ur">تھیم:</span>' +
-        '<span class="lang lang-en">Theme:</span>' +
-        '<span class="lang lang-ar">اللون:</span>' +
-        '<span class="lang lang-zh">主题:</span>' +
-        '</span>' +
-        '<div class="theme-dots">' +
-        '<button class="theme-dot theme-dot-sapphire" data-theme-val="sapphire" title="Royal Sapphire"></button>' +
-        '<button class="theme-dot theme-dot-emerald" data-theme-val="emerald" title="Sacred Emerald"></button>' +
-        '<button class="theme-dot theme-dot-maroon" data-theme-val="maroon" title="Imperial Maroon"></button>' +
-        '</div>';
-      document.body.appendChild(pill);
-    }
-
-    document.querySelectorAll('.theme-dot').forEach(function (dot) {
-      dot.addEventListener('click', function () {
-        applyTheme(dot.getAttribute('data-theme-val'));
-      });
-    });
-  }
+    // Theme fixed to permanent Sacred Emerald on Warm Cream Canvas
+  try {
+    localStorage.removeItem('baitulamn-theme');
+    document.documentElement.removeAttribute('data-theme');
+  } catch (e) {}
 
   document.addEventListener("DOMContentLoaded", function () {
     initLangSwitch();
@@ -500,6 +460,5 @@
     initCurrencySwitcher();
     initAudioShowcase();
     initTrialModal();
-    initThemeSwitcher();
   });
 })();
