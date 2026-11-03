@@ -22,7 +22,7 @@
   --c-sage: #F6EDCC;
 
   /* Radiant Metallic Gold & Warm Amber */
-  --c-gold: #C28B1E;            /* Refined High-Contrast Gold */
+  --c-gold: #9A6A12;            /* Refined High-Contrast Gold */
   --c-gold-metallic: #D4AF37;   /* Radiant Metallic Gold */
   --c-gold-light: #FFF8DE;      /* User's Exact Warm Cream */
   --c-gold-dark: #986B12;       /* Deep Antique Burnished Gold */
@@ -43,9 +43,9 @@
   --c-border-strong: #D5C296;   /* Defined Parchment Border */
 
   /* High-Contrast Typography Inks (Optimal readability on #FFF8DE) */
-  --c-ink: #0A1C30;             /* Deep Prussian Navy Ink */
-  --c-ink-soft: #2C3E50;        /* Deep Slate Navy (Body Copy) */
-  --c-ink-muted: #6B7280;       /* Muted Details */
+  --c-ink: #0A2540;             /* Deep Prussian Navy Ink */
+  --c-ink-soft: #1E293B;        /* Deep Slate Navy (Body Copy) */
+  --c-ink-muted: #526071;       /* Muted Details */
   --c-white: #FFFFFF;
 
   /* Geometry & Elevation */
@@ -80,7 +80,7 @@
   --c-primary-glow: rgba(6, 95, 70, 0.25);
   --c-sage: #F3ECCC;
 
-  --c-gold: #C28B1E;
+  --c-gold: #9A6A12;
   --c-gold-metallic: #D4AF37;
   --c-gold-light: #FFF8DE;
   --c-gold-dark: #986B12;
@@ -123,7 +123,7 @@
   --c-primary-glow: rgba(120, 25, 38, 0.25);
   --c-sage: #F7EECD;
 
-  --c-gold: #C28B1E;
+  --c-gold: #9A6A12;
   --c-gold-metallic: #D4AF37;
   --c-gold-light: #FFF8DE;
   --c-gold-dark: #986B12;
@@ -245,7 +245,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 248, 222, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--c-border);
@@ -618,9 +618,9 @@ html[lang="ar"] .main-nav a {
 .page-hero {
   padding: 100px 0 64px;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: var(--c-bg);
   background-image:
-    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(254, 243, 199, 0.6), transparent 70%),
+    radial-gradient(ellipse 800px 300px at 50% 0%, rgba(246, 237, 204, 0.7), transparent 70%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23C28B1E' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-bottom: 1px solid var(--c-border);
 }
@@ -1823,7 +1823,7 @@ html[lang="ar"] .main-nav a {
     position: absolute;
     top: calc(100% + 6px);
     inset-inline: 16px;
-    background: #FFFFFF;
+    background: #FFF8DE;
     z-index: 60;
     border-radius: var(--radius-m);
     box-shadow: 0 14px 34px -4px rgba(10, 37, 64, 0.2), 0 2px 8px rgba(0, 0, 0, 0.06);
