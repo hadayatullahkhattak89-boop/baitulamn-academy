@@ -9,23 +9,24 @@
 :root,
 [data-theme="sapphire"] {
   /* =========================================================
-     THEME 1: Royal Sapphire & Radiant Gold (Default)
-     Vibrant, prestigious, warm & spiritually uplifting
+     THEME 1: Royal Sapphire & Radiant Gold on Warm Cream Canvas
+     Canvas: #FFF8DE (User's Exact Warm Cream Swatch)
+     Accents: #0E3A64 (Prussian Blue), #D4AF37 (Metallic Gold)
      ========================================================= */
-  --c-primary: #0E3A64;         /* Rich Royal Sapphire Blue (Vibrant & Noble) */
+  --c-primary: #0E3A64;         /* Rich Royal Sapphire Blue (Noble & Dignified) */
   --c-primary-light: #1A5C9B;   /* Bright Azure Sapphire */
   --c-primary-dark: #0A2B4C;    /* Deep Royal Navy */
   --c-primary-deep: #061C33;    /* Midnight Sapphire */
-  --c-primary-soft: #EDF5FC;    /* Soft Sky Silk Tint */
+  --c-primary-soft: #F6EDCC;    /* Soft Cream-Sand Tint */
   --c-primary-glow: rgba(14, 58, 100, 0.25);
-  --c-sage: #EDF5FC;
+  --c-sage: #F6EDCC;
 
-  /* Radiant Metallic Gold & Warm Brass */
-  --c-gold: #C59B27;            /* Refined Islamic Gold */
+  /* Radiant Metallic Gold & Warm Amber */
+  --c-gold: #C28B1E;            /* Refined High-Contrast Gold */
   --c-gold-metallic: #D4AF37;   /* Radiant Metallic Gold */
-  --c-gold-light: #FEF6DC;      /* Warm Champagne Gold Tint */
-  --c-gold-dark: #987216;       /* Deep Antique Burnished Gold */
-  --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
+  --c-gold-light: #FFF8DE;      /* User's Exact Warm Cream */
+  --c-gold-dark: #986B12;       /* Deep Antique Burnished Gold */
+  --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B8860B 100%);
   --c-gold-glow: rgba(212, 175, 55, 0.35);
 
   /* Complementary Pure Accent (Islamic Emerald Green) */
@@ -33,18 +34,18 @@
   --c-accent-light: #10B981;
   --c-accent-soft: #ECFDF5;
 
-  /* Canvas & Surfaces (Warm Alabaster Silk & Pure White) */
-  --c-bg: #FAF9F6;              /* Warm Alabaster Silk (Inviting & Gentle) */
-  --c-bg-alt: #F2ECE4;          /* Warm Linen Stone Surface */
-  --c-surface: #FFFFFF;         /* Crisp Pure White Surface */
+  /* Canvas & Surfaces: #FFF8DE as Primary Background */
+  --c-bg: #FFF8DE;              /* User's Exact Warm Cream / Soft Parchment */
+  --c-bg-alt: #F6EDCC;          /* Complementary Soft Golden Cream */
+  --c-surface: #FFFFFF;         /* Crisp Pure White Surface for Cards */
   --c-surface-card: #FFFFFF;
-  --c-border: #E6DFD5;          /* Delicate Warm Border */
-  --c-border-strong: #D2C7B8;   /* Defined Border */
+  --c-border: #EADBBA;          /* Delicate Warm Cream-Gold Border */
+  --c-border-strong: #D5C296;   /* Defined Parchment Border */
 
-  /* High-Contrast Typography Inks */
-  --c-ink: #0F172A;             /* Slate 900 - Ultra-Sharp */
-  --c-ink-soft: #334155;        /* Slate 700 - Body Copy */
-  --c-ink-muted: #64748B;       /* Slate 500 - Meta Details */
+  /* High-Contrast Typography Inks (Optimal readability on #FFF8DE) */
+  --c-ink: #0A1C30;             /* Deep Prussian Navy Ink */
+  --c-ink-soft: #2C3E50;        /* Deep Slate Navy (Body Copy) */
+  --c-ink-muted: #6B7280;       /* Muted Details */
   --c-white: #FFFFFF;
 
   /* Geometry & Elevation */
@@ -54,10 +55,10 @@
   --radius-l: 26px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 8px -2px rgba(14, 58, 100, 0.06);
-  --shadow-soft: 0 4px 18px -2px rgba(14, 58, 100, 0.06), 0 2px 6px -1px rgba(14, 58, 100, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(14, 58, 100, 0.08), 0 4px 12px -2px rgba(14, 58, 100, 0.04);
-  --shadow-hover: 0 20px 42px -8px rgba(14, 58, 100, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-sm: 0 2px 8px -2px rgba(10, 35, 64, 0.05);
+  --shadow-soft: 0 4px 18px -2px rgba(10, 35, 64, 0.06), 0 2px 6px -1px rgba(10, 35, 64, 0.03);
+  --shadow-card: 0 8px 24px -4px rgba(10, 35, 64, 0.06), 0 3px 8px -2px rgba(10, 35, 64, 0.03);
+  --shadow-hover: 0 18px 38px -6px rgba(10, 35, 64, 0.14), 0 6px 16px -2px rgba(212, 175, 55, 0.22);
   --shadow-modal: 0 25px 60px -15px rgba(6, 28, 51, 0.6);
 
   --container: 1200px;
@@ -67,63 +68,65 @@
 
 [data-theme="emerald"] {
   /* =========================================================
-     THEME 2: Sacred Emerald & Warm Amber Gold
-     Classic Rawdah Green & Quranic Illumination
+     THEME 2: Sacred Emerald & Warm Gold on Warm Cream Canvas
+     Canvas: #FFF8DE
+     Accents: #065F46 (Emerald Green), #D4AF37 (Gold)
      ========================================================= */
   --c-primary: #065F46;         /* Royal Islamic Emerald */
   --c-primary-light: #0D8262;   /* Vibrant Jade */
   --c-primary-dark: #044332;    /* Deep Forest */
   --c-primary-deep: #022C20;    /* Midnight Pine */
-  --c-primary-soft: #ECFDF5;    /* Mint Dew Tint */
+  --c-primary-soft: #F3ECCC;    /* Soft Cream-Sage Tint */
   --c-primary-glow: rgba(6, 95, 70, 0.25);
-  --c-sage: #ECFDF5;
+  --c-sage: #F3ECCC;
 
-  --c-gold: #C59B27;
+  --c-gold: #C28B1E;
   --c-gold-metallic: #D4AF37;
-  --c-gold-light: #FEF9E7;
-  --c-gold-dark: #987216;
+  --c-gold-light: #FFF8DE;
+  --c-gold-dark: #986B12;
   --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
   --c-gold-glow: rgba(212, 175, 55, 0.35);
 
   --c-accent: #D4AF37;
   --c-accent-light: #FDE68A;
-  --c-accent-soft: #FEF9E7;
+  --c-accent-soft: #FFF8DE;
 
-  --c-bg: #FAFBF9;
-  --c-bg-alt: #EFF4EE;
+  --c-bg: #FFF8DE;              /* User's Exact Warm Cream */
+  --c-bg-alt: #F3ECCC;
   --c-surface: #FFFFFF;
   --c-surface-card: #FFFFFF;
-  --c-border: #E0E7DC;
-  --c-border-strong: #C9D4C4;
+  --c-border: #DED3AE;
+  --c-border-strong: #C8BA8C;
 
   --c-ink: #0A1C16;
   --c-ink-soft: #234338;
-  --c-ink-muted: #4B6E61;
+  --c-ink-muted: #5C7569;
 
-  --shadow-sm: 0 2px 8px -2px rgba(6, 95, 70, 0.06);
+  --shadow-sm: 0 2px 8px -2px rgba(6, 95, 70, 0.05);
   --shadow-soft: 0 4px 18px -2px rgba(6, 95, 70, 0.06), 0 2px 6px -1px rgba(6, 95, 70, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(6, 95, 70, 0.08), 0 4px 12px -2px rgba(6, 95, 70, 0.04);
-  --shadow-hover: 0 20px 42px -8px rgba(6, 95, 70, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-card: 0 8px 24px -4px rgba(6, 95, 70, 0.06), 0 3px 8px -2px rgba(6, 95, 70, 0.03);
+  --shadow-hover: 0 18px 38px -6px rgba(6, 95, 70, 0.14), 0 6px 16px -2px rgba(212, 175, 55, 0.22);
   --shadow-modal: 0 25px 60px -15px rgba(2, 44, 32, 0.6);
 }
 
 [data-theme="maroon"] {
   /* =========================================================
-     THEME 3: Imperial Velvet Maroon & Champagne Gold
-     Noble, warm, prestigious Islamic heritage palette
+     THEME 3: Imperial Velvet Maroon on Warm Cream Canvas
+     Canvas: #FFF8DE
+     Accents: #781926 (Velvet Maroon), #D4AF37 (Gold)
      ========================================================= */
   --c-primary: #781926;         /* Refined Jewel Velvet Maroon */
   --c-primary-light: #9C2434;   /* Imperial Crimson */
   --c-primary-dark: #58101B;    /* Deep Wine */
   --c-primary-deep: #3A0811;    /* Midnight Burgundy */
-  --c-primary-soft: #FDF2F4;    /* Rose Silk Tint */
+  --c-primary-soft: #F7EECD;    /* Soft Cream-Rose Tint */
   --c-primary-glow: rgba(120, 25, 38, 0.25);
-  --c-sage: #FDF2F4;
+  --c-sage: #F7EECD;
 
-  --c-gold: #C59B27;
+  --c-gold: #C28B1E;
   --c-gold-metallic: #D4AF37;
-  --c-gold-light: #FEF6DC;
-  --c-gold-dark: #987216;
+  --c-gold-light: #FFF8DE;
+  --c-gold-dark: #986B12;
   --c-gold-gradient: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B48222 100%);
   --c-gold-glow: rgba(212, 175, 55, 0.35);
 
@@ -131,21 +134,21 @@
   --c-accent-light: #10B981;
   --c-accent-soft: #ECFDF5;
 
-  --c-bg: #FAF8F6;
-  --c-bg-alt: #F3ECE6;
+  --c-bg: #FFF8DE;              /* User's Exact Warm Cream */
+  --c-bg-alt: #F7EECD;
   --c-surface: #FFFFFF;
   --c-surface-card: #FFFFFF;
-  --c-border: #E8DDD6;
-  --c-border-strong: #D5C5BC;
+  --c-border: #E6D7B5;
+  --c-border-strong: #D4BE92;
 
   --c-ink: #210F13;
   --c-ink-soft: #4A2E33;
-  --c-ink-muted: #745157;
+  --c-ink-muted: #7E5F64;
 
-  --shadow-sm: 0 2px 8px -2px rgba(120, 25, 38, 0.06);
+  --shadow-sm: 0 2px 8px -2px rgba(120, 25, 38, 0.05);
   --shadow-soft: 0 4px 18px -2px rgba(120, 25, 38, 0.06), 0 2px 6px -1px rgba(120, 25, 38, 0.03);
-  --shadow-card: 0 10px 30px -4px rgba(120, 25, 38, 0.08), 0 4px 12px -2px rgba(120, 25, 38, 0.04);
-  --shadow-hover: 0 20px 42px -8px rgba(120, 25, 38, 0.18), 0 8px 20px -4px rgba(212, 175, 55, 0.22);
+  --shadow-card: 0 8px 24px -4px rgba(120, 25, 38, 0.06), 0 3px 8px -2px rgba(120, 25, 38, 0.03);
+  --shadow-hover: 0 18px 38px -6px rgba(120, 25, 38, 0.14), 0 6px 16px -2px rgba(212, 175, 55, 0.22);
   --shadow-modal: 0 25px 60px -15px rgba(58, 8, 17, 0.6);
 }
 
@@ -217,13 +220,13 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
    ========================================================= */
 .announce-bar {
   background: var(--c-primary-deep);
-  color: var(--c-gold-light);
+  color: #FFF8DE;
   text-align: center;
   padding: 5px 16px;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 248, 222, 0.15);
 }
 .announce-bar a {
   text-decoration: underline;
@@ -245,8 +248,8 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(10, 37, 64, 0.08);
-  box-shadow: 0 1px 4px 0 rgba(10, 37, 64, 0.04);
+  border-bottom: 1px solid var(--c-border);
+  box-shadow: 0 1px 4px 0 rgba(10, 35, 64, 0.04);
   transition: all var(--transition-fast);
 }
 
@@ -618,7 +621,7 @@ html[lang="ar"] .main-nav a {
   background-color: #FFFFFF;
   background-image:
     radial-gradient(ellipse 800px 300px at 50% 0%, rgba(254, 243, 199, 0.6), transparent 70%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230A2540' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23C28B1E' stroke-opacity='0.05' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-bottom: 1px solid var(--c-border);
 }
 .page-hero h1 {
@@ -639,7 +642,7 @@ html[lang="ar"] .main-nav a {
 .section { padding: 86px 0; }
 .section-alt {
   background-color: var(--c-bg-alt);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230A2540' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23C28B1E' stroke-opacity='0.04' stroke-width='1.2'%3E%3Cpath d='M40 12 L45 28 L61 33 L45 38 L40 54 L35 38 L19 33 L35 28 Z'/%3E%3C/g%3E%3C/svg%3E");
   border-top: 1px solid var(--c-border);
   border-bottom: 1px solid var(--c-border);
 }
