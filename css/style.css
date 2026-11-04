@@ -30,7 +30,7 @@
 
   /* Canvas & Surfaces: #FFF8DE as Permanent Main Background */
   --c-bg: #FFF8DE;              /* User's Exact Warm Cream / Soft Parchment */
-  --c-bg-alt: #F3ECCC;          /* Complementary Soft Golden Cream */
+  --c-bg-alt: #FFF8DE;          /* Complementary Soft Golden Cream */
   --c-surface: #FFFFFF;         /* Crisp Pure White Surface for Cards */
   --c-surface-card: #FFFFFF;
   --c-border: #DED3AE;          /* Delicate Warm Cream-Gold Border */
@@ -153,9 +153,7 @@ html[dir="rtl"] .arch-frame svg { transform: scaleX(-1); }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 248, 222, 0.98);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background-color: #FFF8DE;
   border-bottom: 1px solid var(--c-border);
   box-shadow: 0 1px 4px 0 rgba(10, 35, 64, 0.04);
   transition: all var(--transition-fast);
