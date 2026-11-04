@@ -150,44 +150,7 @@
     });
   }
 
-  /* ---------- currency switcher ---------- */
-  var PRICING_DATA = {
-    PKR: { symbol: "Rs.", standard: "4,000", advanced: "6,000", family: "3,500", suffix: "/ ماہانہ" },
-    USD: { symbol: "$", standard: "35", advanced: "55", family: "30", suffix: "/ Month" },
-    GBP: { symbol: "£", standard: "28", advanced: "45", family: "25", suffix: "/ Month" },
-    AED: { symbol: "AED", standard: "130", advanced: "200", family: "115", suffix: "/ Month" }
-  };
-
-  function initCurrencySwitcher() {
-    var btns = document.querySelectorAll(".currency-btn");
-    if (!btns.length) return;
-
-    function applyCurrency(curr) {
-      var data = PRICING_DATA[curr] || PRICING_DATA.PKR;
-      btns.forEach(function (b) {
-        b.classList.toggle("active", b.getAttribute("data-currency") === curr);
-      });
-      document.querySelectorAll("[data-price-plan]").forEach(function (el) {
-        var plan = el.getAttribute("data-price-plan");
-        var val = data[plan] || "";
-        var amountEl = el.querySelector(".price-amount-val");
-        var symEl = el.querySelector(".price-currency-sym");
-        var periodEl = el.querySelector(".price-period-val");
-        if (amountEl) amountEl.textContent = val;
-        if (symEl) symEl.textContent = data.symbol + " ";
-        if (periodEl) periodEl.textContent = data.suffix;
-      });
-    }
-
-    btns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var curr = btn.getAttribute("data-currency");
-        applyCurrency(curr);
-      });
-    });
-    applyCurrency("PKR");
-  }
-
+  
   /* ---------- audio recitation player ---------- */
   function initAudioShowcase() {
     var box = document.querySelector(".audio-showcase-box");
@@ -457,7 +420,6 @@
     markActiveNav();
     initBackToTop();
     initScrollReveal();
-    initCurrencySwitcher();
     initAudioShowcase();
     initTrialModal();
   });
