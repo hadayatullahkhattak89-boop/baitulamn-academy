@@ -261,7 +261,7 @@ html[lang="ar"] .brand-sub {
 }
 
 .main-nav a {
-  font-size: 0.86rem;
+  font-size: 0.90rem;
   font-weight: 600;
   color: var(--c-ink-soft);
   padding: 6px 12px;
@@ -475,29 +475,41 @@ html[lang="ar"] .main-nav a {
 .hero .eyebrow {
   background: var(--c-primary-deep);
   border: 1.5px solid rgba(212, 175, 55, 0.55);
-  padding: 8px 22px;
+  padding: 6px 18px;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
   border-radius: var(--radius-full);
   color: var(--c-gold-light);
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
-  font-size: clamp(2.35rem, 4.9vw, 3.85rem);
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  line-height: 1.35;
   color: #FFFFFF;
-  max-width: 880px;
-  margin: 0 auto 0.5em;
-  letter-spacing: -0.02em;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+  max-width: 820px;
+  margin: 0 auto 0.6em;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+html[lang="ur"] .hero h1 {
+  font-size: clamp(2.05rem, 3.6vw, 2.95rem);
+  line-height: 2.1;
+  padding-block: 0.1em;
+}
+html[lang="ur"] .hero .lead p {
+  font-size: 1.1rem;
+  line-height: 2.2;
 }
 .hero .lead {
-  max-width: 680px;
-  margin: 0 auto 38px;
-  font-size: 1.15rem;
+  max-width: 640px;
+  margin: 0 auto 30px;
+  font-size: 1.04rem;
 }
 .hero .lead p {
-  color: rgba(255, 255, 255, 0.94);
-  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.75;
 }
 .hero-cta {
   display: flex;
@@ -994,7 +1006,7 @@ html[lang="ar"] .main-nav a {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
-  font-size: 0.86rem;
+  font-size: 0.90rem;
   color: rgba(255, 255, 255, 0.65);
 }
 .social-row { display: flex; gap: 12px; margin-top: 18px; }
@@ -1295,7 +1307,7 @@ html[lang="ar"] .main-nav a {
   text-overflow: ellipsis;
 }
 .audio-current-reciter {
-  font-size: 0.86rem;
+  font-size: 0.90rem;
   color: rgba(255, 255, 255, 0.75);
 }
 .equalizer { display: flex; align-items: center; gap: 3.5px; height: 26px; }
