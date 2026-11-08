@@ -1789,3 +1789,257 @@ html[lang="ur"] .hero .lead p {
   .chips-grid { grid-template-columns: 1fr 1fr; }
   .audio-showcase-box { padding: 28px 20px; }
 }
+
+
+/* =========================================================
+   Trust Metrics & International Parent Reviews
+   ========================================================= */
+.trust-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.metric-box {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-m);
+  padding: 26px 20px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(6, 95, 70, 0.06);
+}
+.metric-num {
+  font-family: 'Petrona', serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.metric-stars {
+  color: #F59E0B;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+.metric-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--c-ink-soft);
+}
+
+.testimonial-card {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(6, 95, 70, 0.12);
+  border-radius: var(--radius-l);
+  padding: 32px 28px;
+  box-shadow: 0 8px 24px rgba(6, 95, 70, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--c-gold);
+  box-shadow: 0 16px 36px rgba(6, 95, 70, 0.12);
+}
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.parent-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
+  color: #FFFFFF;
+  font-family: 'Petrona', serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--c-gold);
+  flex-shrink: 0;
+}
+.parent-info h4 {
+  margin: 0 0 2px;
+  font-size: 1.08rem;
+  color: var(--c-primary);
+}
+.parent-location {
+  font-size: 0.82rem;
+  color: var(--c-ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.parent-stars {
+  color: #F59E0B;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.student-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(6, 95, 70, 0.08);
+  border: 1px solid rgba(6, 95, 70, 0.18);
+  color: var(--c-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+}
+.testimonial-body {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--c-ink);
+  font-style: italic;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+html[lang="ur"] .testimonial-body {
+  font-size: 1.08rem;
+  line-height: 2.1;
+  font-style: normal;
+}
+.verified-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #059669;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* =========================================================
+   Classroom & Monthly Evaluation Showcase Box
+   ========================================================= */
+.eval-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: stretch;
+}
+.report-card-mockup {
+  background: #FFFFFF;
+  border: 2px solid var(--c-gold-metallic);
+  border-radius: var(--radius-l);
+  padding: 32px 28px;
+  box-shadow: 0 12px 32px rgba(6, 95, 70, 0.08);
+  position: relative;
+}
+.report-header {
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.report-title-text h4 {
+  margin: 0;
+  color: var(--c-primary);
+  font-size: 1.15rem;
+}
+.report-title-text span {
+  font-size: 0.8rem;
+  color: var(--c-ink-soft);
+}
+.grade-badge-a {
+  background: #065F46;
+  color: #FFFFFF;
+  font-family: 'Petrona', serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--c-gold);
+}
+.eval-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(6, 95, 70, 0.15);
+  font-size: 0.94rem;
+}
+.eval-row:last-child {
+  border-bottom: none;
+}
+.eval-score {
+  font-weight: 700;
+  color: var(--c-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.certificate-mockup {
+  background: linear-gradient(135deg, #FFFCF2 0%, #FFF8DE 100%);
+  border: 3px double var(--c-gold);
+  border-radius: var(--radius-l);
+  padding: 34px 30px;
+  box-shadow: 0 12px 32px rgba(6, 95, 70, 0.08);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cert-seal {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #D4AF37 0%, #AA8010 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 6px 16px rgba(170, 128, 16, 0.35);
+  border: 2px solid #FFFFFF;
+}
+.certificate-mockup h4 {
+  font-family: 'Petrona', serif;
+  color: var(--c-primary);
+  font-size: 1.35rem;
+  margin: 0 0 8px;
+}
+.certificate-mockup p {
+  font-size: 0.95rem;
+  color: var(--c-ink-soft);
+  margin-bottom: 20px;
+}
+.cert-features-list {
+  text-align: start;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.cert-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--c-ink);
+}
+.cert-features-list svg {
+  flex-shrink: 0;
+  stroke: var(--c-primary);
+}
+
+@media (max-width: 860px) {
+  .trust-metrics-strip { grid-template-columns: 1fr; gap: 16px; }
+  .eval-showcase-grid { grid-template-columns: 1fr; gap: 24px; }
+}
